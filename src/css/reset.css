@@ -1,0 +1,28 @@
+body,h1,h2,h3,p,img,ul,li,ol,dl,dt,dd,input,a{
+	margin:0;
+	padding:0;
+	font-family:"Arial";
+}
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	text-decoration:underline;
+}
+img{
+	border:0;
+}
+.clearFloat:after{
+	content:"";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+.clearFloat{
+	zoom:1;
+}
