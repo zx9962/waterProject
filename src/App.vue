@@ -54,14 +54,44 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
+    },
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
+    },
+    async add () {
+      const res = await this.$axios.get('http://127.0.0.1:2112/data')
+      console.log(res)
+      console.log(222)
+    }
+  }
 }
 </script>
 
 <style lang="less">
 @import 'css/base.css';
 @import 'css/reset.css';
-#app {
+#app{
+  display: flex;
   background-color: #f4f5fb;
+  .h-left{
+    width: 200px;
+    height: 100vh;
+    background-color: #1a1c28;
+    .l-title{
+      height: 64px;
+      background-color: #4174f7;
+    }
+  }
+  .h-right{
+    flex: 1;
+    .r-title{
+      height: 64px;
+      background-color: #fff;
+    }
+  }
 }
 </style>
