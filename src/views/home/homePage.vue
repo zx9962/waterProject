@@ -1,22 +1,15 @@
 <template>
   <div id="homePage">
-    <h2>{{msg}}</h2>
-    <input type="text">
-    <!-- <from v-model="val" :attr="check" @checked="check = $event"></from> -->
-    <from v-model="val" :attr.sync="check"></from>
   </div>
 </template>
 
 <script>
-import from from '@/components/from'
+import home from '@/components/home'
 export default {
   name: 'homePage',
-  components: {from},
+  components: {home},
   data () {
     return {
-      msg: '这是home页面',
-      val: '',
-      check: true
     }
   },
   // 生命周期,创建完成时(可以访问当前this实例)
@@ -41,4 +34,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
