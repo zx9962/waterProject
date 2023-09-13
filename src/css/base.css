@@ -27,7 +27,9 @@
 .db {
     display: block !important;
 }
-
+.fw {
+    font-weight: bold;
+}
 .dn {
     display: none;
 }
