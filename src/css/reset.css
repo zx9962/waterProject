@@ -11,7 +11,7 @@ a{
 	color:black;
 }
 a:hover{
-	text-decoration:underline;
+	/* text-decoration:underline; */
 }
 img{
 	border:0;
