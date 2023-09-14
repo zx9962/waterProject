@@ -1,37 +1,44 @@
 <style lang="less">
   #portrayal{
     .wrap{
-      width: 1500px;
-      height: 100vh;
-      // background-color: pink;
+      width: 1322px;
+      // height: 791px;
       box-sizing: border-box;
-      padding: 40px;
-      #main,#main2,#main3,#main4,#main5{background-color: #fff;margin: 8.6px;}
-        #main,#main2{
-          width: 669px;
-          height: 296px;
+      padding: 30px 0 0 30px;
+      div{border-radius: 10px;}
+      #main,#main2,#main3,#main4,#main5{background-color: #fff;}
+        .main,#main{margin: 0;}
+        .main3,.main4,.main5{margin-top: 16px;}
+        .main4,.main5,.main2{margin-left: 16px;}
+        #main,#main2,.main,.main2{
+          width: 606px;
+          height: 276px;
           // background-color: red;
+          float: left;
         }
-        #main3{
-          width: 406px;
-          height: 296px;
+        #main3,.main3{
+          width: 319px;
+          height: 276px;
+          float: left;
           // background-color: aqua;
         }
-        #main4{
-          width: 508px;
-          height: 296px;
+        #main4,.main4{
+          width: 550px;
+          height: 276px;
+          float: left;
           // background-color: yellow;
         }
-        #main5{
-          width: 406px;
-          height: 296px;
+        #main5,.main5{
+          width: 318px;
+          height: 276px;
+          float: left;
         }
     }
   }
 </style>
 <template>
     <div id='portrayal'>
-      <div class="wrap d-flex flex-wrap">
+      <div class="wrap clearFloat:after">
           <mainPage></mainPage>
           <mainPage2></mainPage2>
           <mainPage3></mainPage3>
