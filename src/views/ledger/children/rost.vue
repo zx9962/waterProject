@@ -19,7 +19,7 @@
           }
         }
         .el-form-item{
-          margin-bottom: 17px;
+          margin-bottom: 10px;
         }
         .el-form-item__label{
           text-align: left;
@@ -242,13 +242,13 @@ export default {
         checkList3: [],
         checkList4: [],
         checkList5: [],
-        checkList6: [],
+        checkList6: []
         // checked: true
-        rules: {
-          name: [
-            { required: true, message: '请输入您的账号', trigger: 'blur' }
-          ]
-        }
+        // rules: {
+        //   name: [
+        //     { required: true, message: '请输入您的账号', trigger: 'blur' }
+        //   ]
+        // }
       }
     }
   },
