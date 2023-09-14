@@ -101,6 +101,14 @@ export default {
     },
     handleClose (key, keyPath) {
       console.log(key, keyPath)
+<<<<<<< HEAD
+    },
+    async add () {
+      const res = await this.$axios.get('http://127.0.0.1:2112/data')
+      console.log(res)
+      console.log(222)
+=======
+>>>>>>> 40afc9e8cf09c0dab057c963be2f9c444bdd31fb
     }
   }
 }
