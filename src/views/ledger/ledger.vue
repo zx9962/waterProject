@@ -19,7 +19,7 @@
         }
       }
       .rost{
-        padding: 28px 0 0px 35px;
+        padding: 20px 0 0px 35px;
         h5{
           font-size:13px ;
           color:#3c4571 ;
@@ -28,7 +28,7 @@
       }
       .btn{
         width:1226px ;
-        height: 57px;
+        height: 50px;
         background-color: #fff;
         border-radius: 10px;
         margin: 18px 0 0 28px;
