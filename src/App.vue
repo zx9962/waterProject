@@ -7,16 +7,13 @@
 <script>
 export default {
   name: 'App',
-<<<<<<< HEAD
   methods: {
   }
-=======
-  methods: {}
->>>>>>> 40afc9e8cf09c0dab057c963be2f9c444bdd31fb
 }
 </script>
 
 <style lang="less">
+ol,li,ul,dt,dl,p,h5,h1,p,span,body{margin: 0;padding: 0;}
 @import 'css/base.css';
 @import 'css/reset.css';
 </style>

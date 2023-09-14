@@ -48,6 +48,11 @@ export default new Router({
           component: generalize
         },
         {
+          path: '/ledGer',
+          name: 'ledGer',
+          component: () => import('@/views/ledger/ledger')
+        },
+        {
           path: '/agent',
           name: 'agent',
           component: agent,
