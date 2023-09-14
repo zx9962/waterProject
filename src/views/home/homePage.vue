@@ -96,6 +96,12 @@ export default {
   watch: {},
   // 方法集合
   methods: {
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
+    },
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
+    },
     async add () {
       const res = await this.$axios.get('http://127.0.0.1:2112/data')
       console.log(res)
