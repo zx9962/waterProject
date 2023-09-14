@@ -32,7 +32,6 @@
         .assign{
           width: 100%;
           height: 50px;
-          margin: 14px 0 0 0;
           border-bottom:1px solid #e1e1e1;
           span{
             color:#565e85 ;
@@ -67,18 +66,13 @@
           }
         }
         .sanCeng,.siCeng,.wuCeng,.liuCeng{
-          height: 48px;
+          height: 52px;
           width: 100%;
+          line-height: 52px;
           border-bottom: 1px solid #e1e1e1;
         }
         .san_left,.si_left,.wu_left,.liu_left{
           width: 163px;
-          height: 48px;
-          line-height: 48px;
-        }
-        .san_right,.si_right,.wu_right,.liu_right{
-          // background-color: pink;
-          line-height: 48px;
         }
       }
     }
