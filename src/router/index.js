@@ -10,6 +10,10 @@ import week from '@/views/userFeedback/children/week'
 import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
+import userManage from '@/views/userManage/userManage'
+import agent from '@/views/agent/agent'
+import data from '@/views/agent/children/data'
+import password from '@/views/agent/children/password'
 
 Vue.use(Router)
 
@@ -43,6 +47,40 @@ export default new Router({
           path: '/generalize',
           name: 'generalize',
           component: generalize
+        },
+        {
+          path: '/userManage',
+          name: 'userManage',
+          component: userManage
+        },
+        {
+          path: '/ledGer',
+          name: 'ledGer',
+          component: () => import('@/views/ledger/ledger')
+        },
+        {
+          path: '/push',
+          name: 'pushMessage',
+          component: () => import('@/views/pushMessage/pushMessage')
+        },
+        {
+          path: '/agent',
+          name: 'agent',
+          component: agent,
+          redirect: '/password',
+          children: [
+            {
+              path: '/password',
+              name: 'password',
+              component: password
+              // children: [] // 三级路由
+            },
+            {
+              path: '/data',
+              name: 'dataA',
+              component: data
+            }
+          ]
         },
         {
           path: '/userFeedback',

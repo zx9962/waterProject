@@ -81,14 +81,14 @@ export default {
       this.option = ({
         xAxis: {
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+          data: ['11.21', '11.28', '12.5', '上周', '本周']
         },
         yAxis: {
           type: 'value'
         },
         series: [
           {
-            data: [150, 230, 224, 218, 135, 147, 260],
+            data: [150, 230, 110, 190, 135],
             type: 'line'
           }
         ]

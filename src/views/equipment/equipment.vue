@@ -79,27 +79,28 @@
             <el-menu-item index="5">租赁信息</el-menu-item>
           </el-menu>
         </div>
-        <div class="device_rig_bottom">
+        <div class="device_rig_bottom d-flex justify-content-between">
           <ul>
             <li class="d-flex align-items-center justify-content-between">
               <span>滤芯1</span>
               <el-progress :percentage="percentage" :color="customColorMethod" class="progress"></el-progress>
               <span>约1235小时</span>
-              <el-button size="mini" round class="reset" @click="reset">复位</el-button>
+              <el-button size="mini" round class="reset" @click="reset" :disabled="percentage<20?true:false">复位</el-button>
             </li>
             <li class="d-flex align-items-center justify-content-between">
               <span>滤芯2</span>
               <el-progress :percentage="percentage" :color="customColorMethod" class="progress"></el-progress>
               <span>约1235小时</span>
-              <el-button size="mini" round class="reset" @click="reset">复位</el-button>
+              <el-button size="mini" round class="reset" @click="reset" :disabled="percentage<20?true:false">复位</el-button>
             </li>
             <li class="d-flex align-items-center justify-content-between">
               <span>滤芯3</span>
               <el-progress :percentage="percentage" :color="customColorMethod" class="progress"></el-progress>
               <span>约1235小时</span>
-              <el-button size="mini" round class="reset" @click="reset">复位</el-button>
+              <el-button size="mini" round class="reset" @click="reset" :disabled="percentage<20?true:false">复位</el-button>
             </li>
           </ul>
+          <p>滤芯状态低于20%才能复位</p>
         </div>
       </div>
     </div>
@@ -263,10 +264,10 @@ export default {
       margin: 0 auto;
       margin-top: 15px;
       border-radius: 5px;
+      height: 480px;
       .device_lef{
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
         width: 690px;
-        height: 510px;
         background: #ffffff;
         .block{
           margin-top: 50px;
@@ -277,6 +278,8 @@ export default {
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
         background: #ffffff;
         width: 520px;
+        display: flex;
+        flex-direction: column;
         .device_rig_top{
           background: #f2f7ff;
           padding-left: 16px;
@@ -297,15 +300,26 @@ export default {
         .device_rig_bottom{
           padding: 30px 25px;
           font-size: 10px;
-          li{
-            margin-top: 30px;
-            .progress{
-              flex: 1;
-              margin: 0 0 0 10px;
+          flex-direction: column;
+          flex: 1;
+          ul{
+            flex: 1;
+            li{
+              margin-top: 30px;
+              color: #828baf;
+              .progress{
+                flex: 1;
+                margin: 0 0 0 10px;
+              }
+              .reset{
+                margin-left: 10px;
+              }
             }
-            .reset{
-              margin-left: 10px;
-            }
+          }
+          p{
+            text-align: right;
+            font-size: 10px;
+            color: #d4d8e4;
           }
         }
       }
