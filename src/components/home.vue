@@ -7,7 +7,7 @@
       <input type="checkbox" class="checkbox">
       <p>记住密码</p>
     </div>
-    <button>立即登录</button>
+    <button @click="login()">立即登录</button>
     <button class="try">申请试用</button>
     <p class="forgetpwd">忘记密码</p>
   </div>
@@ -26,7 +26,9 @@ export default {
   },
   // 方法集合
   methods: {
-
+    login () {
+      this.$router.push('/home')
+    }
   }
 }
 </script>
