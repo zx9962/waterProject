@@ -1,0 +1,114 @@
+{
+  "id": "4252596",
+  "name": "2023-9-12小组项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "140164",
+      "name": "公告小喇叭",
+      "font_class": "gonggaoxiaolaba",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "383032",
+      "name": "群蜂账号管理",
+      "font_class": "zhanghaoguanli",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "629357",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "687615",
+      "name": "message",
+      "font_class": "xiaoxizhongxin",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "2053179",
+      "name": "产品配置",
+      "font_class": "chanpinpeizhi",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "2718742",
+      "name": "消息已提醒",
+      "font_class": "xiaoxiyitixing",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5484481",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e7af",
+      "unicode_decimal": 59311
+    },
+    {
+      "icon_id": "6337455",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "ec7f",
+      "unicode_decimal": 60543
+    },
+    {
+      "icon_id": "8551026",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "10182209",
+      "name": "可视化",
+      "font_class": "keshihua",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "15351663",
+      "name": "运营管理",
+      "font_class": "yunyingguanli",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "15726992",
+      "name": "账号管理",
+      "font_class": "zhanghaoguanli1",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "19809710",
+      "name": "img_02",
+      "font_class": "img_02",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "22446784",
+      "name": "租赁管理",
+      "font_class": "zulinguanli",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "28901332",
+      "name": "数据中心",
+      "font_class": "shujuzhongxin",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    }
+  ]
+}
