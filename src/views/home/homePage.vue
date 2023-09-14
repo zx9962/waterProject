@@ -63,7 +63,7 @@
             <el-dropdown-menu slot="dropdown" class="drop-down">
               <el-dropdown-item>账号设置</el-dropdown-item>
               <el-dropdown-item>修改密码</el-dropdown-item>
-              <el-dropdown-item divided>退出登录</el-dropdown-item>
+              <el-dropdown-item divided><p @click="backChange()">退出登录</p></el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
         </div>
@@ -101,6 +101,9 @@ export default {
     },
     handleClose (key, keyPath) {
       console.log(key, keyPath)
+    },
+    backChange () {
+      this.$router.push('/login')
     }
   }
 }

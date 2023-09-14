@@ -27,7 +27,15 @@ export default {
   // 方法集合
   methods: {
     login () {
-      this.$router.push('/home')
+      if (this.mobile === '' || this.mobile === '') {
+        this.$message.error('请输入正确的账号和密码！')
+      } else {
+        this.$message({
+          message: '恭喜您登录成功',
+          type: 'success'
+        })
+        this.$router.push('/generalize')
+      }
     }
   }
 }

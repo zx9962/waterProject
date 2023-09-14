@@ -1,6 +1,6 @@
 <style scoped lang="less">
-  #c1{
-    width: 340px;
+  #c3{
+    width: 513px;
     height: 260px;
     box-sizing: border-box;
     border-radius: 8px;
@@ -10,34 +10,31 @@
   }
   .title{
     height: 40px;
-    background-color: #3f74f9;
+    background-color: #6dcd3c;
     color: #fff;
     font-size: 12px;
     line-height: 40px;
     padding-left: 20px;
     border-radius: 8px 8px 0 0;
   }
-  #main{
+  #main3{
     // width: 360px;
     margin-left: 20px;
     height: 250px;
     margin-top: -20px;
-    // position: absolute;
-    // top: 10px;
-    // left: 3px;
   }
 </style>
 <template>
-  <div id='c1'>
-    <p class="title">每日新增设备</p>
-    <div id="main"></div>
+  <div id='c3'>
+    <p class="title">设备每周总量</p>
+    <div id="main3"></div>
   </div>
 </template>
 
 <script>
 import * as echarts from 'echarts'
 export default {
-  name: 'c1',
+  name: 'c3',
   // import引入组件才能使用
   components: {},
   props: {},
@@ -61,43 +58,38 @@ export default {
       //   this.time1 = res.data.list1.time1
       //   this.num1 = res.data.list1.num1
       // }
-      console.log(this.option)
-      console.log(this.time1, this.num1)
-      this.option = {
-        xAxis: {
-          type: 'category',
-          data: res.data.list1.time1
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [
-          {
-            data: res.data.list1.num1,
-            type: 'line'
-          }
-        ]
-      }
-      console.log(this.option)
+      // this.option = {
+      //   xAxis: {
+      //     type: 'category',
+      //     data: res.data.list1.time1
+      //   },
+      //   yAxis: {
+      //     type: 'value'
+      //   },
+      //   series: [
+      //     {
+      //       data: res.data.list1.num1,
+      //       type: 'line'
+      //     }
+      //   ]
+      // }
     },
     // 渲染图表
     setTable () {
-      var chartDom = document.getElementById('main')
+      var chartDom = document.getElementById('main3')
       this.myChart = echarts.init(chartDom)
-      // this.option
-
       this.option = {
         xAxis: {
           type: 'category',
-          data: ['1', '2', '3', '4', '5', '6', '今天']
+          data: ['11.13', '11.20', '11.27', '12.4', '12.11', '上周', '本周']
         },
         yAxis: {
           type: 'value'
         },
         series: [
           {
-            data: [1500, 500, 1200, 1400, 1500, 1100, 1000],
-            type: 'line'
+            data: [120, 200, 150, 80, 70, 110, 130],
+            type: 'bar'
           }
         ]
       }

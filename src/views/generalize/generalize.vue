@@ -1,23 +1,49 @@
 <style scoped lang="less">
   .cont{
-    margin: 26px 0 0 0;
+    width: 1220px;
+    margin: 26px 0 0 30px;
+    .top{
+      margin-bottom: 27px;
+    }
   }
 </style>
 <template>
   <div id='generalize'>
+    <advert></advert>
     <div class="cont">
-      <c1></c1>
+      <div class="top d-flex justify-content-between">
+        <c1></c1>
+        <c2></c2>
+        <c3></c3>
+      </div>
+      <div class="top d-flex justify-content-between">
+        <b1></b1>
+        <b2></b2>
+        <b3></b3>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import c1 from '../../components/generalize/c1'
+import c2 from '../../components/generalize/c2'
+import c3 from '../../components/generalize/c3'
+import b1 from '../../components/generalize/b1'
+import b2 from '../../components/generalize/b2'
+import b3 from '../../components/generalize/b3'
+import advert from '../../components/advert'
 export default {
   name: 'generalize',
   // import引入组件才能使用
   components: {
-    c1
+    c1,
+    c2,
+    c3,
+    b1,
+    b2,
+    b3,
+    advert
   },
   data () {
     return {
