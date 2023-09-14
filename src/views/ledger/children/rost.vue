@@ -2,7 +2,7 @@
   #rost{
     .botBox{
       width:1226px ;
-      height:425px ;
+      height:440px ;
       margin: 6px 0 0 28px;
       background-color: #fff;
       .leftBox{
@@ -19,7 +19,7 @@
           }
         }
         .el-form-item{
-          margin-bottom: 10px;
+          margin-bottom: 17px;
         }
         .el-form-item__label{
           text-align: left;
@@ -88,38 +88,33 @@
     <div id='rost'>
       <div class="botBox d-flex justify-content-between">
           <div class="leftBox">
-            <!-- <el-radio-group v-model="labelPosition" size="small">
-                <el-radio-button label="left">左对齐</el-radio-button>
-                <el-radio-button label="right">右对齐</el-radio-button>
-                <el-radio-button label="top">顶部对齐</el-radio-button>
-            </el-radio-group> -->
       <div style="margin: 0px;"></div>
-          <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-            <el-form-item label="账号">
-              <el-input v-model="formLabelAlign.name" placeholder="请填写用户名"></el-input>
+          <el-form :label-position="labelPosition" :rules="backstage.rules" label-width="80px" :model="formLabelAlign">
+            <el-form-item label="账号" prop="name">
+              <el-input v-model="backstage.formLabelAlign.name" placeholder="请填写用户名"></el-input>
             </el-form-item>
             <el-form-item label="密码">
-              <el-input v-model="formLabelAlign.region" show-password placeholder="请填写密码"></el-input>
+              <el-input v-model="backstage.formLabelAlign.region" show-password placeholder="请填写密码"></el-input>
             </el-form-item>
             <el-form-item label="联系人">
-              <el-input v-model="formLabelAlign.type"></el-input>
+              <el-input v-model="backstage.formLabelAlign.type"></el-input>
             </el-form-item>
             <el-form-item label="联系电话">
-              <el-input v-model="formLabelAlign.phone"></el-input>
+              <el-input v-model="backstage.formLabelAlign.phone"></el-input>
             </el-form-item>
             <el-form-item label="邮箱">
-              <el-input v-model="formLabelAlign.mailbox"></el-input>
+              <el-input v-model="backstage.formLabelAlign.mailbox"></el-input>
             </el-form-item>
             <el-form-item label="公司职务">
-              <el-input v-model="formLabelAlign.duty" placeholder="此处填写公司职务"></el-input>
+              <el-input v-model="backstage.formLabelAlign.duty" placeholder="此处填写公司职务"></el-input>
             </el-form-item>
             <el-form-item label="联系地址">
-              <el-input v-model="formLabelAlign.site"></el-input>
+              <el-input v-model="backstage.formLabelAlign.site"></el-input>
             </el-form-item>
             <el-form-item label="角色类型">
-              <el-select v-model="value" placeholder="请选择">
+              <el-select v-model="backstage.value" placeholder="请选择">
                 <el-option
-                  v-for="item in options"
+                  v-for="item in backstage.options"
                   :key="item.value"
                   :label="item.label"
                   :value="item.value">
@@ -140,7 +135,7 @@
               <el-checkbox v-model="checked">运营管理</el-checkbox>
             </div>
             <div class="er_right flex-1">
-              <el-checkbox-group v-model="checkList">
+              <el-checkbox-group v-model="backstage.checkList">
                 <el-checkbox label="用户管理"></el-checkbox>
                 <el-checkbox label="设备管理"></el-checkbox>
                 <el-checkbox label="滤芯防伪管理"></el-checkbox>
@@ -159,7 +154,7 @@
               <el-checkbox v-model="checked">租赁管理</el-checkbox>
             </div>
             <div class="san_right flex-1">
-              <el-checkbox-group v-model="checkList3">
+              <el-checkbox-group v-model="backstage.checkList3">
                 <el-checkbox label="故障监控"></el-checkbox>
                 <el-checkbox label="消息推送"></el-checkbox>
               </el-checkbox-group>
@@ -171,7 +166,7 @@
               <el-checkbox v-model="checked">数据中心</el-checkbox>
             </div>
             <div class="si_right flex-1">
-              <el-checkbox-group v-model="checkList4">
+              <el-checkbox-group v-model="backstage.checkList4">
                 <el-checkbox label="故障监控"></el-checkbox>
                 <el-checkbox label="消息推送"></el-checkbox>
                 <el-checkbox label="用户反馈"></el-checkbox>
@@ -184,7 +179,7 @@
               <el-checkbox v-model="checked">产品配置</el-checkbox>
             </div>
             <div class="wu_right flex-1">
-              <el-checkbox-group v-model="checkList5">
+              <el-checkbox-group v-model="backstage.checkList5">
                 <el-checkbox label="故障监控"></el-checkbox>
                 <el-checkbox label="消息推送"></el-checkbox>
               </el-checkbox-group>
@@ -196,7 +191,7 @@
               <el-checkbox v-model="checked">账号管理</el-checkbox>
             </div>
             <div class="liu_right flex-1">
-              <el-checkbox-group v-model="checkList6">
+              <el-checkbox-group v-model="backstage.checkList6">
                 <el-checkbox label="故障监控"></el-checkbox>
                 <el-checkbox label="消息推送"></el-checkbox>
               </el-checkbox-group>
@@ -216,51 +211,67 @@ export default {
   data () {
     return {
       labelPosition: 'right',
-      formLabelAlign: {
-        name: '',
-        region: '',
-        type: '',
-        phone: '',
-        mailbox: '',
-        duty: '',
-        site: ''
-      },
-      options: [{
-        value: '选项1',
-        label: '管理员'
-      }, {
-        value: '选项2',
-        label: '用户'
-      }, {
-        value: '选项3',
-        label: '员工'
-      }, {
-        value: '选项4',
-        label: '组长'
-      }, {
-        value: '选项5',
-        label: '马克思'
-      }],
-      value: '',
-      checkList: ['选中且禁用', '复选框 A'],
-      checkList3: [],
-      checkList4: [],
-      checkList5: [],
-      checkList6: []
-      // checked: true
+      backstage: {
+        formLabelAlign: {
+          name: '',
+          region: '',
+          type: '',
+          phone: '',
+          mailbox: '',
+          duty: '',
+          site: ''
+        },
+        options: [{
+          value: '选项1',
+          label: '管理员'
+        }, {
+          value: '选项2',
+          label: '用户'
+        }, {
+          value: '选项3',
+          label: '员工'
+        }, {
+          value: '选项4',
+          label: '组长'
+        }, {
+          value: '选项5',
+          label: '马克思'
+        }],
+        value: '',
+        checkList: ['选中且禁用', '复选框 A'],
+        checkList3: [],
+        checkList4: [],
+        checkList5: [],
+        checkList6: [],
+        // checked: true
+        rules: {
+          name: [
+            { required: true, message: '请输入您的账号', trigger: 'blur' }
+          ]
+        }
+      }
     }
   },
   // 计算属性
   computed: {},
   // 监听data中的数据变化
-  watch: {},
+  watch: {
+  },
   // 方法集合
   methods: {
-
+    // submitForm(formName) {
+    //   this.$refs[formName].validate((valid) => {
+    //     if (valid) {
+    //       alert('submit!')
+    //     } else {
+    //       console.log('error submit!!')
+    //       return false
+    //     }
+    //   })
+    // }
   },
   // 生命周期，创建完成时（可以访问当前this实例）
   created () {
-
   },
   // 生命周期：挂载完成时（可以访问DOM元素）
   mounted () {

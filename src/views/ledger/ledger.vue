@@ -70,7 +70,7 @@
     <div id='ledger'>
       <div class="parcel">
           <div class="title">
-            <span>【公告】热烈祝贺****公司接入深智云净水平台</span>
+            <advert></advert>
           </div>
           <div class="rost">
             <h5>后台账号管理</h5>
@@ -86,12 +86,14 @@
 </template>
 
 <script>
+import advert from '../../components/advert.vue'
 import Rost from './children/rost.vue'
 export default {
   name: 'ledger',
   // import引入组件才能使用
   components: {
-    Rost
+    Rost,
+    advert
   },
   props: {},
   data () {
