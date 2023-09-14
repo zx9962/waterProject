@@ -10,6 +10,7 @@ import week from '@/views/userFeedback/children/week'
 import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
+import userManage from '@/views/userManage/userManage'
 
 Vue.use(Router)
 
@@ -43,6 +44,11 @@ export default new Router({
           path: '/generalize',
           name: 'generalize',
           component: generalize
+        },
+        {
+          path: '/userManage',
+          name: 'userManage',
+          component: userManage
         },
         {
           path: '/userFeedback',
