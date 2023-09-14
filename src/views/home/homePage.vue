@@ -96,10 +96,11 @@ export default {
   watch: {},
   // 方法集合
   methods: {
-    async add () {
-      const res = await this.$axios.get('http://127.0.0.1:2112/data')
-      console.log(res)
-      console.log(222)
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
+    },
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
     }
   }
 }
