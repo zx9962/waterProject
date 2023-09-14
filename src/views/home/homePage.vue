@@ -20,7 +20,7 @@
             <i class="el-icon-location"></i>
             <span>运营管理</span>
           </template>
-          <el-menu-item index="1">用户管理</el-menu-item>
+          <el-menu-item index="/userManage">用户管理</el-menu-item>
           <el-menu-item index="/equip">设备管理</el-menu-item>
           <el-menu-item index="2-3">滤芯寿命管理</el-menu-item>
           <el-menu-item index="2-4">故障监控</el-menu-item>
