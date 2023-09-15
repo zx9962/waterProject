@@ -40,7 +40,7 @@ export default {
       },
       legend: {
         top: '5%',
-        left: 'center'
+        right: '2%'
       },
       series: [
         {

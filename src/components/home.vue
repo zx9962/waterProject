@@ -1,6 +1,6 @@
 <template>
   <div id='home' class="d-flex">
-    <span>用户登录</span>
+    <span class="user">用户登录</span>
     <input type="text" placeholder="请输入手机号码" v-model='mobile'>
     <input type="text" placeholder="请输入密码" v-model="pwd">
     <div class="keeppwd d-flex">
@@ -32,7 +32,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
   #home{
     width: 351px;
     height: 445px;
@@ -57,8 +57,7 @@ export default {
     color: #afb3c0;
   }
   span{
-    margin-top: 120px;
-    margin-bottom:28px;
+    margin: 120px auto 20px;
   }
   input{
     height: 33px;
