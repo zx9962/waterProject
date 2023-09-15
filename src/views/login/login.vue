@@ -28,12 +28,4 @@ export default {
   background-size:100% 800px;
   position: relative;
  }
- /* #home{
-  position: absolute;
-  margin: auto;
-  top:15%;
-  left:0;
-  right:0;
-  border-radius: 10px;
- } */
 </style>

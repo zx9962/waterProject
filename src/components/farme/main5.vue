@@ -1,5 +1,20 @@
+<style lang="less">
+  .main5{
+    position: relative;
+    .main5P{
+      position: absolute;
+      left: 14px;
+      top: 11px;
+      color: #5b6388;
+      font-size:14px;
+      font-weight: bold;
+      z-index: 99;
+    }
+  }
+</style>
 <template>
     <div class='main5'>
+      <p class="main5P">性别分布</p>
       <div id="main5"></div>
     </div>
 </template>
@@ -33,7 +48,6 @@ export default {
     var myChart5 = echarts.init(document.getElementById('main5'))
     myChart5.setOption({
       title: {
-        text: '性别分布'
       },
       tooltip: {
         trigger: 'item'
@@ -79,6 +93,3 @@ export default {
   activated () { } // 如果页面有keep-alive缓存功能，这个函数会触发执行
 }
 </script>
-<style scoped>
-
-</style>
