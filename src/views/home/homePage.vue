@@ -44,6 +44,24 @@
           <el-menu-item index="3-2">水质分布</el-menu-item>
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
+        <el-submenu index="5">
+          <template slot="title">
+            <i class="el-icon-location"></i>
+            <span>产品配置</span>
+          </template>
+          <el-menu-item index="5-1">选项一</el-menu-item>
+          <el-menu-item index="5-2">选项二</el-menu-item>
+          <el-menu-item index="5-3">选项三</el-menu-item>
+        </el-submenu>
+        <el-submenu index="6">
+          <template slot="title">
+            <i class="el-icon-location"></i>
+            <span>账号管理</span>
+          </template>
+          <el-menu-item index="5-1">代理商管理</el-menu-item>
+          <el-menu-item index="/ledGer">后台账号管理</el-menu-item>
+          <el-menu-item index="5-3">我的账号</el-menu-item>
+        </el-submenu>
       </el-menu>
     </div>
     <div class="h-right">
@@ -116,6 +134,9 @@ export default {
     width: 200px;
     height: 100vh;
     background-color: #1a1c28;
+    .el-submenu ul .is-active{
+        border-right:5px solid #4077ff
+      }
     .l-title{
       height: 64px;
       text-align: center;
