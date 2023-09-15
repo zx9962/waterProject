@@ -58,6 +58,13 @@
         color: #a8acb9;
       }
     }
+    .bot_P{
+      width: 100%;
+      height: 150px;
+      line-height: 163px;
+      color: #fff;
+      font-size: 12px;
+    }
   }
  }
 </style>
@@ -78,6 +85,9 @@
     </div>
     <div class="bottom_mi">
       <p>忘记密码</p>
+    </div>
+    <div class="bot_P d-flex justify-content-around">
+      <p>Copyright © YourCompany.All rights reserved.</p>
     </div>
   </div>
    </div>
