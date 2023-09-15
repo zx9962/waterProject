@@ -264,10 +264,10 @@ export default {
       margin: 0 auto;
       margin-top: 15px;
       border-radius: 5px;
+      height: 480px;
       .device_lef{
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
         width: 690px;
-        height: 510px;
         background: #ffffff;
         .block{
           margin-top: 50px;

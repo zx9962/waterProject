@@ -59,6 +59,11 @@ export default new Router({
           component: () => import('@/views/ledger/ledger')
         },
         {
+          path: '/push',
+          name: 'pushMessage',
+          component: () => import('@/views/pushMessage/pushMessage')
+        },
+        {
           path: '/agent',
           name: 'agent',
           component: agent,

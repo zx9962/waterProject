@@ -23,8 +23,7 @@
           <el-menu-item index="/userManage">用户管理</el-menu-item>
           <el-menu-item index="/equip">设备管理</el-menu-item>
           <el-menu-item index="2-3">滤芯寿命管理</el-menu-item>
-          <el-menu-item index="2-4">故障监控</el-menu-item>
-          <el-menu-item index="2-5">消息推送</el-menu-item>
+          <el-menu-item index="/push">消息推送</el-menu-item>
           <el-menu-item index="/userFeedback">用户反馈</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
@@ -63,7 +62,7 @@
             <el-dropdown-menu slot="dropdown" class="drop-down">
               <el-dropdown-item>账号设置</el-dropdown-item>
               <el-dropdown-item>修改密码</el-dropdown-item>
-              <el-dropdown-item divided>退出登录</el-dropdown-item>
+              <el-dropdown-item divided><p @click="backChange()">退出登录</p></el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
         </div>
@@ -102,10 +101,8 @@ export default {
     handleClose (key, keyPath) {
       console.log(key, keyPath)
     },
-    async add () {
-      const res = await this.$axios.get('http://127.0.0.1:2112/data')
-      console.log(res)
-      console.log(222)
+    backChange () {
+      this.$router.push('/login')
     }
   }
 }

@@ -293,14 +293,14 @@ export default {
     }
     .userInfo_box{
       padding: 15px 60px 0 30px;
-      height: 510px;
+      height: 480px;
       .userInfo_box_lef{
         background: #fff;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
         height: 100%;
         width: 590px;
         .block{
-          margin-top: 50px;
+          margin-top: 30px;
           text-align: center;
         }
       }
