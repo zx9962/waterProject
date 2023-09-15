@@ -24,7 +24,8 @@ export default {
   #login{
   width: 100vw;
   height: 100vh;
-  background: rgb(62, 129, 246) url('../../assets/img/bg.jpg') no-repeat;
+  background-image:url('../../assets/img/bg.jpg');
+  background-size:100% 800px;
   position: relative;
  }
  #home{
