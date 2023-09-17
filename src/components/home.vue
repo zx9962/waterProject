@@ -61,7 +61,7 @@
     }
     .bot_P{
       width: 100%;
-      height: 150px;
+      height: 130px;
       line-height: 163px;
       color: #fff;
       font-size: 12px;

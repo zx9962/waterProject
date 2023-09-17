@@ -64,6 +64,11 @@ export default new Router({
           component: () => import('@/views/pushMessage/pushMessage')
         },
         {
+          path: '/affiche',
+          name: 'affichePage',
+          component: () => import('@/views/affiche/affiche')
+        },
+        {
           path: '/agent',
           name: 'agent',
           component: agent,
