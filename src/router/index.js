@@ -11,6 +11,7 @@ import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
 import userManage from '@/views/userManage/userManage'
+import file from '@/views/file/file'
 import agent from '@/views/agent/agent'
 import data from '@/views/agent/children/data'
 import password from '@/views/agent/children/password'
@@ -52,6 +53,11 @@ export default new Router({
           path: '/userManage',
           name: 'userManage',
           component: userManage
+        },
+        {
+          path: '/file',
+          name: 'file',
+          component: file
         },
         {
           path: '/ledGer',
