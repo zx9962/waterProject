@@ -82,6 +82,11 @@ export default new Router({
           ]
         },
         {
+          path: '/affiche',
+          name: 'affichePage',
+          component: () => import('@/views/affiche/affiche')
+        },
+        {
           path: '/agent',
           name: 'agent',
           component: agent,

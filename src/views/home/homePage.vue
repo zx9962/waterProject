@@ -27,17 +27,12 @@
           <el-menu-item index="/push">消息推送</el-menu-item>
           <el-menu-item index="/userFeedback">用户反馈</el-menu-item>
         </el-submenu>
-        <el-menu-item index="3">
-          <i class="el-icon-location"></i>
-          <span slot="title">租赁管理</span>
-        </el-menu-item>
         <el-submenu index="4">
           <template slot="title">
             <i class="iconfont icon-shujuzhongxin"></i>
             <span>数据中心</span>
           </template>
           <el-menu-item index="3-1">数据分析</el-menu-item>
-          <el-menu-item index="3-2">水质分布</el-menu-item>
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
@@ -46,16 +41,14 @@
             <span>产品配置</span>
           </template>
           <el-menu-item index="/modelS">型号设置</el-menu-item>
-          <el-menu-item index="3-2">批次维护</el-menu-item>
         </el-submenu>
         <el-submenu index="6">
           <template slot="title">
-            <i class="iconfont icon-shujuzhongxin"></i>
-            <span>消息中心</span>
+            <i class="el-icon-location"></i>
+            <span>账号管理</span>
           </template>
-          <el-menu-item index="3-1">代理商管理</el-menu-item>
-          <el-menu-item index="3-2">后台账号管理</el-menu-item>
-          <el-menu-item index="3-3">我的账号</el-menu-item>
+          <el-menu-item index="5-1">代理商管理</el-menu-item>
+          <el-menu-item index="/ledGer">后台账号管理</el-menu-item>
         </el-submenu>
       </el-menu>
     </div>
@@ -130,6 +123,9 @@ export default {
     width: 200px;
     height: 100vh;
     background-color: #1a1c28;
+    .el-submenu ul .is-active{
+        border-right:5px solid #4077ff
+      }
     .l-title{
       height: 64px;
       text-align: center;

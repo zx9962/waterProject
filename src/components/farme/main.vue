@@ -1,11 +1,29 @@
 <style lang="less">
+.main{
+  position: relative;
   #main{
     box-sizing: border-box;
     padding: 0 20px;
   }
+  .mainP{
+      position: absolute;
+      left: 24px;
+      top: 11px;
+      color: #5b6388;
+      font-size:14px;
+      font-weight: bold;
+      z-index: 99;
+      span{
+        color:#9ca2c0 ;
+        font-size:9px;
+        margin-left: 6px;
+      }
+    }
+}
 </style>
 <template>
     <div class='main'>
+      <p class="mainP">使用频率<span>次/每月</span></p>
       <div id="main"></div>
     </div>
 </template>
@@ -39,7 +57,7 @@ export default {
     var myChart = echarts.init(document.getElementById('main'))
     myChart.setOption({
       title: {
-        text: '使用频率 次/每月',
+        // text: '使用频率 次/每月',
         subtext: ''
       },
       tooltip: {
