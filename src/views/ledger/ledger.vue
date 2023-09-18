@@ -11,7 +11,6 @@
         height: 38px;
         line-height: 38px;
         box-sizing: border-box;
-        padding: 0 30px;
         border-top:1px solid #e2ebf4 ;
         border-bottom:1px solid #e2ebf4 ;
         span{

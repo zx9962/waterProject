@@ -1,6 +1,6 @@
 <template>
   <div id="advert">
-    <div class="advert_box">
+    <div class="advert_box" @click="jump">
       <i class="el-icon-eleme"></i>
       <span>【公告】热烈祝贺公司接入深智云净水平台</span>
     </div>
@@ -16,6 +16,11 @@ export default {
     }
   },
   methods: {
+    jump () {
+      this.$router.push({
+        path: '/affiche'
+      })
+    }
   }
 }
 </script>
