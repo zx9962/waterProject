@@ -1,7 +1,7 @@
 <template>
-  <div id="advert">
+  <div id="advert" >
     <div class="advert_box">
-      <i class="el-icon-eleme"></i>
+      <i class="iconfont icon-gonggaoxiaolaba"></i>
       <span>【公告】热烈祝贺公司接入深智云净水平台</span>
     </div>
   </div>
@@ -15,13 +15,13 @@ export default {
       msg: '这是一个vue项目模板'
     }
   },
-  methods: {
-  }
+  methods: {}
 }
 </script>
 
 <style lang="less" scoped>
   .advert_box{
+    padding-left: 25px;
     background: #f5faff;
     border-top: 1px solid #e6eef5;
     border-bottom: 1px solid #e6eef5;

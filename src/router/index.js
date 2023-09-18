@@ -59,9 +59,27 @@ export default new Router({
           component: () => import('@/views/ledger/ledger')
         },
         {
+          path: '/modelS',
+          name: 'modelSetting',
+          component: () => import('@/views/modelSetting/modelSetting')
+        },
+        {
           path: '/push',
           name: 'pushMessage',
-          component: () => import('@/views/pushMessage/pushMessage')
+          redirect: '/push/leftFrom1',
+          component: () => import('@/views/pushMessage/pushMessage'),
+          children: [
+            {
+              path: 'leftFrom1',
+              name: 'leftFrom1',
+              component: () => import('@/views/pushMessage/children/leftFrom1')
+            },
+            {
+              path: 'leftFrom2',
+              name: 'leftFrom2',
+              component: () => import('@/views/pushMessage/children/leftFrom2')
+            }
+          ]
         },
         {
           path: '/agent',
@@ -85,6 +103,7 @@ export default new Router({
         {
           path: '/userFeedback',
           name: 'userFeedback',
+          redirect: '/userFeedback/week',
           component: userFeedback,
           children: [
             {

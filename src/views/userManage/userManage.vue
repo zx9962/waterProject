@@ -62,6 +62,7 @@
             prop="userName"
             label="用户姓名"
             label-class-name="aa"
+            align="center"
             width="100">
           </el-table-column>
           <el-table-column
@@ -76,6 +77,7 @@
             :current-page.sync="currentPage3"
             :page-size="10"
             layout="prev, pager, next, jumper"
+            background
             :total="1000">
           </el-pagination>
         </div>
@@ -270,7 +272,7 @@ export default {
           }
         }
         .userState_box_rig{
-          width: 390px;
+          width: 405px;
           height: 96px;
           background: #fff;
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -295,19 +297,19 @@ export default {
       padding: 15px 60px 0 30px;
       height: 480px;
       .userInfo_box_lef{
-        background: #fff;
+        // background: #fff;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
         height: 100%;
         width: 590px;
         .block{
-          margin-top: 30px;
+          margin-top: 25px;
           text-align: center;
         }
       }
       .userInfo_box_rig{
         background: #fff;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-        width: 590px;
+        width: 635px;
         .userInfo_box_rig_top{
           background: #f2f7ff;
           padding-left: 16px;
