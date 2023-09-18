@@ -9,15 +9,15 @@
       border: 1PX solid #fff;
       .cemLeft{
         width: 887px;
-        height: 330px;
+        height: 468px;
         margin: 19px auto 0;
         ul{
           margin-top:12px;
           li{
             width: 100%;
-            margin-top: 13px;
+            margin-top: 10px;
             box-sizing: border-box;
-            padding: 17px 30px;
+            padding: 15px 30px;
             border: 1px solid #e7eef4;
             display: flex;
             justify-content: space-between;
@@ -83,6 +83,13 @@
               <span>6月13日</span>
             </li>
           </ul>
+        </div>
+        <div class="page d-flex justify-content-around">
+          <el-pagination
+            background
+            layout="prev, pager, next"
+            :total="1000">
+          </el-pagination>
         </div>
       </div>
     </div>
