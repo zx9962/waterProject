@@ -1,6 +1,6 @@
 <template>
   <div id="advert">
-    <div class="advert_box d-flex align-items-center" @click="jump">
+    <div class="advert_box" @click="jump">
       <!-- <i class="el-icon-eleme"></i> -->
       <img src="../img/ic_horn.png" alt="">
       <span>【公告】热烈祝贺公司接入深智云净水平台</span>
@@ -34,15 +34,15 @@ export default {
     height: 40px;
     box-sizing: border-box;
     padding: 0 15px;
-    line-height: 40px;
     text-indent: 10px;
     color: #000a2b;
     font-size: 13px;
+    display: flex;
+    align-items: center;
     // i{
     //   color: #f57c00;
     // }
     img{
-      line-height: 50px;
     }
   }
 </style>
