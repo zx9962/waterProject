@@ -11,6 +11,7 @@ import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
 import userManage from '@/views/userManage/userManage'
+import file from '@/views/file/file'
 import agent from '@/views/agent/agent'
 import data from '@/views/agent/children/data'
 import password from '@/views/agent/children/password'
@@ -74,14 +75,37 @@ export default new Router({
           component: userManage
         },
         {
+          path: '/file',
+          name: 'file',
+          component: file
+        },
+        {
           path: '/ledGer',
           name: 'ledGer',
           component: () => import('@/views/ledger/ledger')
         },
         {
+          path: '/modelS',
+          name: 'modelSetting',
+          component: () => import('@/views/modelSetting/modelSetting')
+        },
+        {
           path: '/push',
           name: 'pushMessage',
-          component: () => import('@/views/pushMessage/pushMessage')
+          redirect: '/push/leftFrom1',
+          component: () => import('@/views/pushMessage/pushMessage'),
+          children: [
+            {
+              path: 'leftFrom1',
+              name: 'leftFrom1',
+              component: () => import('@/views/pushMessage/children/leftFrom1')
+            },
+            {
+              path: 'leftFrom2',
+              name: 'leftFrom2',
+              component: () => import('@/views/pushMessage/children/leftFrom2')
+            }
+          ]
         },
         {
           path: '/affiche',
@@ -110,6 +134,7 @@ export default new Router({
         {
           path: '/userFeedback',
           name: 'userFeedback',
+          redirect: '/userFeedback/week',
           component: userFeedback,
           children: [
             {

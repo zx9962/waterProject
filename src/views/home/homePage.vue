@@ -10,6 +10,7 @@
         background-color="#1a1c28"
         text-color="#dce8ff"
         active-text-color="#4174f7"
+        :unique-opened="fold"
         router>
         <el-menu-item index="/generalize">
           <i class="el-icon-menu"></i>
@@ -17,41 +18,35 @@
         </el-menu-item>
         <el-submenu index="2">
           <template slot="title">
-            <i class="el-icon-location"></i>
+            <i class="iconfont icon-yunyingguanli"></i>
             <span>运营管理</span>
           </template>
           <el-menu-item index="/userManage">用户管理</el-menu-item>
           <el-menu-item index="/equip">设备管理</el-menu-item>
+<<<<<<< HEAD
+          <el-menu-item index="/file">滤芯寿命管理</el-menu-item>
+          <el-menu-item index="2-4">故障监控</el-menu-item>
+          <el-menu-item index="2-5">消息推送</el-menu-item>
+=======
           <el-menu-item index="2-3">滤芯寿命管理</el-menu-item>
           <el-menu-item index="/push">消息推送</el-menu-item>
+>>>>>>> 534f06012f3e3ba08b69694080487f48be899669
           <el-menu-item index="/userFeedback">用户反馈</el-menu-item>
-        </el-submenu>
-        <el-submenu index="3">
-          <template slot="title">
-            <i class="el-icon-location"></i>
-            <span>租赁管理</span>
-          </template>
-          <el-menu-item index="3-1">选项1</el-menu-item>
-          <el-menu-item index="3-2">选项1</el-menu-item>
-          <el-menu-item index="3-3">选项1</el-menu-item>
         </el-submenu>
         <el-submenu index="4">
           <template slot="title">
-            <i class="el-icon-location"></i>
+            <i class="iconfont icon-shujuzhongxin"></i>
             <span>数据中心</span>
           </template>
           <el-menu-item index="3-1">数据分析</el-menu-item>
-          <el-menu-item index="3-2">水质分布</el-menu-item>
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
           <template slot="title">
-            <i class="el-icon-location"></i>
+            <i class="iconfont icon-shujuzhongxin"></i>
             <span>产品配置</span>
           </template>
-          <el-menu-item index="5-1">选项一</el-menu-item>
-          <el-menu-item index="5-2">选项二</el-menu-item>
-          <el-menu-item index="5-3">选项三</el-menu-item>
+          <el-menu-item index="/modelS">型号设置</el-menu-item>
         </el-submenu>
         <el-submenu index="6">
           <template slot="title">
@@ -60,7 +55,6 @@
           </template>
           <el-menu-item index="5-1">代理商管理</el-menu-item>
           <el-menu-item index="/ledGer">后台账号管理</el-menu-item>
-          <el-menu-item index="5-3">我的账号</el-menu-item>
         </el-submenu>
       </el-menu>
     </div>
@@ -72,7 +66,7 @@
           <el-dropdown :hide-on-click="false">
             <span class="el-dropdown-link">
               <div class="user-head d-flex align-items-center justify-content-between">
-                <i class="el-icon-user-solid"></i>
+                <i class="iconfont icon-zhanghaoguanli"></i>
                 <p>遥遥领先</p>
                 <i class="el-icon-caret-bottom fw"></i>
               </div>
@@ -99,6 +93,7 @@ export default {
   components: {home},
   data () {
     return {
+      fold: true
     }
   },
   // 生命周期,创建完成时(可以访问当前this实例)
@@ -114,7 +109,7 @@ export default {
   // 方法集合
   methods: {
     handleOpen (key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
     },
     handleClose (key, keyPath) {
       console.log(key, keyPath)

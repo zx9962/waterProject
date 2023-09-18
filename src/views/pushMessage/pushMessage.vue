@@ -27,7 +27,15 @@
 有的健康、放心的品质好水，为反馈用户的支持，凡是公司的老顾客，双12期间再次购买全部3折-预购从速！！！</template>
         </comment>
       </div>
-      <div class="m-right"></div>
+      <div class="m-right">
+        <div class="m-r-title d-flex align-items-center">
+          <router-link to="/push/leftFrom1">推送筛选</router-link>
+          <router-link to="/push/leftFrom2">精确推送</router-link>
+        </div>
+        <div class="m-contFrom">
+          <router-view/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -85,6 +93,25 @@ export default {
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
+    .m-r-title{
+      height: 40px;
+      padding-left: 15px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 16px 4px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      a{
+        padding: 4px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
   }
+  .m-contFrom{
+    padding: 14px 28px;
+    box-sizing: border-box;
+  }
+}
+.router-link-active{
+  background-color: #4174f7;
+  color: #fff;
 }
 </style>
