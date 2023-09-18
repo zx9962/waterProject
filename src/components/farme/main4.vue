@@ -1,5 +1,24 @@
+<style lang="less">
+  .main4{
+    position: relative;
+    .main4P{
+      position: absolute;
+      left: 14px;
+      top: 11px;
+      color: #5b6388;
+      font-size:14px;
+      font-weight: bold;
+      z-index: 99;
+    }
+    #main4{
+      box-sizing: border-box;
+      padding: 0 14px;
+    }
+  }
+</style>
 <template>
     <div class='main4'>
+      <p class="main4P">账户余额</p>
       <div id="main4"></div>
     </div>
 </template>
@@ -32,7 +51,6 @@ export default {
     var myChart4 = echarts.init(document.getElementById('main4'))
     myChart4.setOption({
       title: {
-        text: '账户余额'
       },
       tooltip: {
         trigger: 'axis',
@@ -79,6 +97,3 @@ export default {
   activated () { } // 如果页面有keep-alive缓存功能，这个函数会触发执行
 }
 </script>
-<style scoped>
-
-</style>

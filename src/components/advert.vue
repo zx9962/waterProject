@@ -1,7 +1,8 @@
 <template>
   <div id="advert">
-    <div class="advert_box">
-      <i class="el-icon-eleme"></i>
+    <div class="advert_box d-flex align-items-center" @click="jump">
+      <!-- <i class="el-icon-eleme"></i> -->
+      <img src="../img/ic_horn.png" alt="">
       <span>【公告】热烈祝贺公司接入深智云净水平台</span>
     </div>
   </div>
@@ -16,23 +17,33 @@ export default {
     }
   },
   methods: {
+    jump () {
+      this.$router.push({
+        path: '/affiche'
+      })
+    }
   }
 }
 </script>
 
 <style lang="less" scoped>
-  .advert_box{
-    background: #f5faff;
-    border-top: 1px solid #e6eef5;
-    border-bottom: 1px solid #e6eef5;
-    height: 40px;
-    box-sizing: border-box;
-    line-height: 40px;
-    text-indent: 10px;
-    color: #000a2b;
-    font-size: 13px;
-    i{
-      color: #f57c00;
-    }
+.advert_box{
+  padding-left: 25px;
+  background: #f5faff;
+  border-top: 1px solid #e6eef5;
+  border-bottom: 1px solid #e6eef5;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  line-height: 40px;
+  text-indent: 10px;
+  color: #000a2b;
+  font-size: 13px;
+  // i{
+  //   color: #f57c00;
+  // }
+  img{
+    line-height: 50px;
   }
+}
 </style>

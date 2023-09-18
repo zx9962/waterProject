@@ -1,5 +1,20 @@
+<style lang="less">
+  .main2{
+    position: relative;
+    .main2P{
+      position: absolute;
+      left: 18px;
+      top: 11px;
+      color: #5b6388;
+      font-size:14px;
+      font-weight: bold;
+      z-index: 99;
+    }
+  }
+</style>
 <template>
     <div class='main2'>
+      <p class="main2P">年龄段</p>
       <div id="main2"></div>
     </div>
 </template>
@@ -33,7 +48,6 @@ export default {
     var myChart2 = echarts.init(document.getElementById('main2'))
     myChart2.setOption({
       title: {
-        text: '年龄段'
       },
       tooltip: {
         trigger: 'axis',
@@ -80,6 +94,3 @@ export default {
   activated () { } // 如果页面有keep-alive缓存功能，这个函数会触发执行
 }
 </script>
-<style scoped>
-
-</style>

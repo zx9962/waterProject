@@ -65,6 +65,7 @@
             :current-page.sync="currentPage3"
             :page-size="10"
             layout="prev, pager, next, jumper"
+            background
             :total="1000">
           </el-pagination>
         </div>
@@ -226,11 +227,12 @@ export default {
         }
         .sta_mac_inp{
           width: 310px;
-          height: 24px;
+          height: 26px;
           border: 1px solid #eef3f7;
           border-radius: 3px;
-          font-size: 12px;
+          font-size: 10px;
           text-indent: 1em;
+          outline: none;
         }
       }
       .sta_bottom{
@@ -264,13 +266,13 @@ export default {
       margin: 0 auto;
       margin-top: 15px;
       border-radius: 5px;
+      height: 480px;
       .device_lef{
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
         width: 690px;
-        height: 510px;
         background: #ffffff;
         .block{
-          margin-top: 50px;
+          margin-top: 30px;
           text-align: center;
         }
       }

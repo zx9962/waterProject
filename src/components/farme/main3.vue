@@ -1,5 +1,20 @@
+<style lang="less">
+  .main3{
+    position: relative;
+    .main3P{
+      position: absolute;
+      left: 24px;
+      top: 18px;
+      color: #5b6388;
+      font-size:14px;
+      font-weight: bold;
+      z-index: 99;
+    }
+  }
+</style>
 <template>
     <div class='main3'>
+      <p class="main3P">Android/iOS</p>
       <div id="main3"></div>
     </div>
 </template>
@@ -33,14 +48,13 @@ export default {
     var myChart3 = echarts.init(document.getElementById('main3'))
     myChart3.setOption({
       title: {
-        text: 'Android/iOS'
       },
       tooltip: {
         trigger: 'item'
       },
       legend: {
         top: '5%',
-        left: 'center'
+        right: '2%'
       },
       series: [
         {
@@ -79,6 +93,3 @@ export default {
   activated () { } // 如果页面有keep-alive缓存功能，这个函数会触发执行
 }
 </script>
-<style scoped>
-
-</style>

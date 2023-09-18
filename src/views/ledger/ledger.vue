@@ -11,7 +11,6 @@
         height: 38px;
         line-height: 38px;
         box-sizing: border-box;
-        padding: 0 30px;
         border-top:1px solid #e2ebf4 ;
         border-bottom:1px solid #e2ebf4 ;
         span{
@@ -19,7 +18,7 @@
         }
       }
       .rost{
-        padding: 28px 0 0px 35px;
+        padding: 20px 0 0px 35px;
         h5{
           font-size:13px ;
           color:#3c4571 ;
@@ -28,7 +27,7 @@
       }
       .btn{
         width:1226px ;
-        height: 57px;
+        height: 50px;
         background-color: #fff;
         border-radius: 10px;
         margin: 18px 0 0 28px;
@@ -70,7 +69,7 @@
     <div id='ledger'>
       <div class="parcel">
           <div class="title">
-            <span>【公告】热烈祝贺****公司接入深智云净水平台</span>
+            <advert></advert>
           </div>
           <div class="rost">
             <h5>后台账号管理</h5>
@@ -86,12 +85,14 @@
 </template>
 
 <script>
+import advert from '../../components/advert.vue'
 import Rost from './children/rost.vue'
 export default {
   name: 'ledger',
   // import引入组件才能使用
   components: {
-    Rost
+    Rost,
+    advert
   },
   props: {},
   data () {
