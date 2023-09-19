@@ -27,7 +27,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-<<<<<<< HEAD
   .advert_box{
     background: #f5faff;
     border-top: 1px solid #e6eef5;
@@ -45,25 +44,5 @@ export default {
     // }
     img{
     }
-=======
-.advert_box{
-  padding-left: 25px;
-  background: #f5faff;
-  border-top: 1px solid #e6eef5;
-  border-bottom: 1px solid #e6eef5;
-  height: 40px;
-  box-sizing: border-box;
-  padding: 0 15px;
-  line-height: 40px;
-  text-indent: 10px;
-  color: #000a2b;
-  font-size: 13px;
-  // i{
-  //   color: #f57c00;
-  // }
-  img{
-    line-height: 50px;
->>>>>>> c5b70788b7a02c8f9c4e41ff609df257907cf09f
   }
-}
 </style>
