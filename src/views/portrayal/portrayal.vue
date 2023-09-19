@@ -6,11 +6,11 @@
       box-sizing: border-box;
       padding: 30px 0 0 30px;
       div{border-radius: 10px;}
-      #main,#main2,#main3,#main4,#main5{background-color: #fff;}
-      .main,#main{margin: 0;}
+      #main1,#main2,#main3,#main4,#main5{background-color: #fff;}
+      .main1,#main1{margin: 0;}
       .main3,.main4,.main5{margin-top: 16px;}
       .main4,.main5,.main2{margin-left: 16px;}
-      #main,#main2,.main,.main2{
+      #main1,#main2,.main,.main2{
         width: 606px;
         height: 276px;
         // background-color: red;
