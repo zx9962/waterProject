@@ -10,11 +10,21 @@ import week from '@/views/userFeedback/children/week'
 import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
+<<<<<<< HEAD
 import dataAnalysis from '@/views/dataAnalysis/dataAnalysis'
 import d1 from '@/views/dataAnalysis/children/d1'
 import d2 from '@/views/dataAnalysis/children/d2'
 import d3 from '@/views/dataAnalysis/children/d3'
 import d4 from '@/views/dataAnalysis/children/d4'
+=======
+import userManage from '@/views/userManage/userManage'
+import file from '@/views/file/file'
+import agent from '@/views/agent/agent'
+import data from '@/views/agent/children/data'
+import password from '@/views/agent/children/password'
+import faultPage from '@/views/equipment/children/fault'
+import filterPage from '@/views/equipment/children/filter'
+>>>>>>> b16eb3bf6a369bdbeef3eb7ec30c157ee64ffc3d
 
 Vue.use(Router)
 
@@ -37,7 +47,25 @@ export default new Router({
         {
           path: '/equip',
           name: 'equipment',
-          component: equipment
+          component: equipment,
+          redirect: '/equip/oneP',
+          children: [
+            {
+              path: 'oneP',
+              name: 'onePage',
+              component: () => import('@/views/equipment/children/onePage')
+            },
+            {
+              path: 'fault',
+              name: 'faultPage',
+              component: faultPage
+            },
+            {
+              path: 'filter',
+              name: 'filterPage',
+              component: filterPage
+            }
+          ]
         },
         {
           path: '/portrayal',
@@ -50,8 +78,71 @@ export default new Router({
           component: generalize
         },
         {
+          path: '/userManage',
+          name: 'userManage',
+          component: userManage
+        },
+        {
+          path: '/file',
+          name: 'file',
+          component: file
+        },
+        {
+          path: '/ledGer',
+          name: 'ledGer',
+          component: () => import('@/views/ledger/ledger')
+        },
+        {
+          path: '/modelS',
+          name: 'modelSetting',
+          component: () => import('@/views/modelSetting/modelSetting')
+        },
+        {
+          path: '/push',
+          name: 'pushMessage',
+          redirect: '/push/leftFrom1',
+          component: () => import('@/views/pushMessage/pushMessage'),
+          children: [
+            {
+              path: 'leftFrom1',
+              name: 'leftFrom1',
+              component: () => import('@/views/pushMessage/children/leftFrom1')
+            },
+            {
+              path: 'leftFrom2',
+              name: 'leftFrom2',
+              component: () => import('@/views/pushMessage/children/leftFrom2')
+            }
+          ]
+        },
+        {
+          path: '/affiche',
+          name: 'affichePage',
+          component: () => import('@/views/affiche/affiche')
+        },
+        {
+          path: '/agent',
+          name: 'agent',
+          component: agent,
+          redirect: '/password',
+          children: [
+            {
+              path: '/password',
+              name: 'password',
+              component: password
+              // children: [] // 三级路由
+            },
+            {
+              path: '/data',
+              name: 'dataA',
+              component: data
+            }
+          ]
+        },
+        {
           path: '/userFeedback',
           name: 'userFeedback',
+          redirect: '/userFeedback/week',
           component: userFeedback,
           children: [
             {
@@ -98,5 +189,7 @@ export default new Router({
         }
       ]
     }
-  ]
+  ],
+  linkActiveClass: 'router-active',
+  linkExactActiveClass: 'router-linkactive'
 })
