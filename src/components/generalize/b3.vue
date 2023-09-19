@@ -117,8 +117,7 @@ export default {
   methods: {
     // 向图标插入值
     async getdate () {
-      var res = await this.$axios.get('https://www.fastmock.site/mock/a1aadac316486d9974fb0ce587f48347/demo/generalize')
-      console.log(res)
+      // var res = await this.$axios.get('https://www.fastmock.site/mock/a1aadac316486d9974fb0ce587f48347/demo/generalize')
     },
     // 渲染图表
     setTable () {

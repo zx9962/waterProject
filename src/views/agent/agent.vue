@@ -2,7 +2,6 @@
   .box{
     width: 1226px;
     height: 608px;
-    border: 1px solid cyan;
     margin: 40px 0 0 30px;
     background-color: #fff;
     border-radius: 5px;
@@ -38,10 +37,10 @@
     <div class="box">
       <h2 class='title'>代理商管理</h2>
       <div class="tabbar">
-        <router-link class="list list_a" to="/data">
+        <router-link class="list list_a" to="/agent/data">
           <span>资料</span>
         </router-link>
-        <router-link class="list list_b" to="/password">
+        <router-link class="list list_b" to="/agent/password">
           <span>账号密码</span>
         </router-link>
       </div>

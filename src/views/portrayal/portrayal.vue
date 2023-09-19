@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import mainPage from '@/components/farme/main'
+import mainPage from '@/components/farme/main1'
 import mainPage2 from '@/components/farme/main2'
 import mainPage3 from '@/components/farme/main3'
 import mainPage4 from '@/components/farme/main4'

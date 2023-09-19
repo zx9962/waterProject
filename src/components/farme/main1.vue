@@ -1,7 +1,7 @@
 <style lang="less">
-.main{
+.main1{
   position: relative;
-  #main{
+  #main1{
     box-sizing: border-box;
     padding: 0 20px;
   }
@@ -22,16 +22,16 @@
 }
 </style>
 <template>
-    <div class='main'>
+    <div class='main1'>
       <p class="mainP">使用频率<span>次/每月</span></p>
-      <div id="main"></div>
+      <div id="main1"></div>
     </div>
 </template>
 
 <script>
 import * as echarts from 'echarts'
 export default {
-  name: 'main',
+  name: 'main1',
   // import引入组件才能使用
   components: {},
   props: {},
@@ -54,7 +54,7 @@ export default {
   },
   // 生命周期：挂载完成时（可以访问DOM元素）
   mounted () {
-    var myChart = echarts.init(document.getElementById('main'))
+    var myChart = echarts.init(document.getElementById('main1'))
     myChart.setOption({
       title: {
         // text: '使用频率 次/每月',

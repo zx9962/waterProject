@@ -1,7 +1,7 @@
 <template>
   <div id="homePage">
     <div class="h-left">
-      <div class="l-title">saas</div>
+      <div class="l-title" @click="skip()">saas</div>
       <el-menu
         default-active="2"
         class="el-menu-vertical-demo"
@@ -24,8 +24,7 @@
           <el-menu-item index="/userManage">用户管理</el-menu-item>
           <el-menu-item index="/equip">设备管理</el-menu-item>
           <el-menu-item index="/file">滤芯寿命管理</el-menu-item>
-          <el-menu-item index="2-4">故障监控</el-menu-item>
-          <el-menu-item index="2-5">消息推送</el-menu-item>
+          <el-menu-item index="/push">消息推送</el-menu-item>
           <el-menu-item index="/userFeedback">用户反馈</el-menu-item>
         </el-submenu>
         <el-submenu index="4">
@@ -33,7 +32,12 @@
             <i class="iconfont icon-shujuzhongxin"></i>
             <span>数据中心</span>
           </template>
+<<<<<<< HEAD
+          <el-menu-item index="/dataAnalysis">数据分析</el-menu-item>
+          <el-menu-item index="3-2">水质分布</el-menu-item>
+=======
           <el-menu-item index="3-1">数据分析</el-menu-item>
+>>>>>>> b16eb3bf6a369bdbeef3eb7ec30c157ee64ffc3d
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
@@ -48,7 +52,7 @@
             <i class="el-icon-location"></i>
             <span>账号管理</span>
           </template>
-          <el-menu-item index="5-1">代理商管理</el-menu-item>
+          <el-menu-item index="/agent">代理商管理</el-menu-item>
           <el-menu-item index="/ledGer">后台账号管理</el-menu-item>
         </el-submenu>
       </el-menu>
@@ -111,6 +115,9 @@ export default {
     },
     backChange () {
       this.$router.push('/login')
+    },
+    skip () {
+      this.$router.push('/generalize')
     }
   }
 }
