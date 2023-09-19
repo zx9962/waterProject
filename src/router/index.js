@@ -157,7 +157,5 @@ export default new Router({
         }
       ]
     }
-  ],
-  linkActiveClass: 'router-active',
-  linkExactActiveClass: 'router-linkactive'
+  ]
 })

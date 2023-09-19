@@ -2,7 +2,7 @@
   #rost{
     .botBox{
       width:1226px ;
-      height:440px ;
+      height:425px ;
       margin: 6px 0 0 28px;
       background-color: #fff;
       .leftBox{
