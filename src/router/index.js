@@ -10,6 +10,13 @@ import week from '@/views/userFeedback/children/week'
 import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
+<<<<<<< HEAD
+import dataAnalysis from '@/views/dataAnalysis/dataAnalysis'
+import d1 from '@/views/dataAnalysis/children/d1'
+import d2 from '@/views/dataAnalysis/children/d2'
+import d3 from '@/views/dataAnalysis/children/d3'
+import d4 from '@/views/dataAnalysis/children/d4'
+=======
 import userManage from '@/views/userManage/userManage'
 import file from '@/views/file/file'
 import agent from '@/views/agent/agent'
@@ -17,6 +24,7 @@ import data from '@/views/agent/children/data'
 import password from '@/views/agent/children/password'
 import faultPage from '@/views/equipment/children/fault'
 import filterPage from '@/views/equipment/children/filter'
+>>>>>>> b16eb3bf6a369bdbeef3eb7ec30c157ee64ffc3d
 
 Vue.use(Router)
 
@@ -151,6 +159,30 @@ export default new Router({
             {
               path: 'oneMonth',
               component: oneMonth
+            }
+          ]
+        },
+        {
+          path: '/dataAnalysis',
+          name: 'dataAnalysis',
+          component: dataAnalysis,
+          redirect: '/dataAnalysis/d1',
+          children: [
+            {
+              path: 'd1',
+              component: d1
+            },
+            {
+              path: 'd2',
+              component: d2
+            },
+            {
+              path: 'd3',
+              component: d3
+            },
+            {
+              path: 'd4',
+              component: d4
             }
           ]
         }
