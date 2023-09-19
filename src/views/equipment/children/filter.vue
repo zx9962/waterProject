@@ -1,13 +1,17 @@
 <style lang="less">
   #filter{
-    .wrap{
+    #wrap{
+      width: 1234px;
+      // box-sizing: border-box;
+      // padding: 0 40px;
+      margin: 0 auto;
       #bigLeft{
         width: 800px;
         height: 445px;
         text-align: center;
         line-height: 445px;
         background-color: white;
-        margin: 17px 17px 0 40px;
+        margin: 17px 17px 0 0px;
       }
       .minRight{
         margin-top: 17px;
@@ -75,7 +79,7 @@
 </style>
 <template>
     <div id='filter'>
-      <div class="wrap d-flex">
+      <div id="wrap" class=" d-flex justify-content-between">
         <div id="bigLeft"><h1>我是地图</h1></div>
         <div class="minRight">
           <div class="minTop">
