@@ -17,6 +17,10 @@
         font-size: 11px;
         color: #f39903;
         font-weight: bold;
+        i{
+          margin-top: 2.5px;
+          margin-left: 4px;
+        }
       }
     }
   }
@@ -26,7 +30,10 @@
       <advert></advert>
       <div class="gao d-flex justify-content-between align-items-center">
         <span @click="toggle">公告历史</span>
-        <button> ‹ &nbsp; 返回</button>
+        <button class="d-flex align-items-center" @click="retreat()">
+          <i class="el-icon-arrow-left fw"></i>
+          <p>返回</p>
+        </button>
       </div>
       <div v-show="showComponent">
         <cementVue></cementVue>
@@ -58,6 +65,9 @@ export default {
   methods: {
     toggle () {
       this.showComponent = !this.showComponent
+    },
+    retreat () {
+      this.$router.go(-1)
     }
   },
   // 生命周期，创建完成时（可以访问当前this实例）

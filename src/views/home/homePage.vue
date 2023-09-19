@@ -1,7 +1,7 @@
 <template>
   <div id="homePage">
     <div class="h-left">
-      <div class="l-title">saas</div>
+      <div class="l-title" @click="skip()">saas</div>
       <el-menu
         default-active="2"
         class="el-menu-vertical-demo"
@@ -33,8 +33,13 @@
             <span>数据中心</span>
           </template>
           <el-menu-item index="/dataAnalysis">数据分析</el-menu-item>
+<<<<<<< HEAD
           <el-menu-item index="3-2">水质分布</el-menu-item>
           <el-menu-item index="3-1">数据分析</el-menu-item>
+=======
+          <!-- <el-menu-item index="3-2">水质分布</el-menu-item>
+          <el-menu-item index="3-1">数据分析</el-menu-item> -->
+>>>>>>> 3af95e00b9bcf3299bdf951488a11e6010d33f00
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
@@ -112,6 +117,9 @@ export default {
     },
     backChange () {
       this.$router.push('/login')
+    },
+    skip () {
+      this.$router.push('/generalize')
     }
   }
 }

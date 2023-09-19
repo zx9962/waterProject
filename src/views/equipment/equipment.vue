@@ -31,7 +31,7 @@
         display: block;
         line-height: 23px;
       }
-      a.router-active{
+      a.router-link-active{
         background-color: #3f74f9;
         color: #fff;
         font-weight: 700;
@@ -117,43 +117,7 @@ export default {
         {title: '所有'},
         {title: '需更换'},
         {title: '正常'}
-      ],
-      tableData: [{
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄',
-        site: '1325436'
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1517 弄',
-        site: '1325436'
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1519 弄',
-        site: '1325436'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄',
-        site: '1325436'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄',
-        site: '1325436'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄',
-        site: '1325436'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄',
-        site: '1325436'
-      }]
+      ]
     }
   },
   methods: {

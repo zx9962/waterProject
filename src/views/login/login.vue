@@ -1,5 +1,5 @@
 <template>
-  <div id='login' class="d-flex justify-content-around align-items-center">
+  <div id='login' class="">
     <!-- 登录功能的组件 -->
     <home></home>
   </div>
@@ -21,10 +21,11 @@ export default {
 }
 </script>
 <style scoped>
-  #login{
-  width: 1519px;
-  height: 710px;
+#login{
+  width: 100vw;
+  height: 100vh;
   background-image:url('../../assets/img/bg.jpg');
+  background-color: skyblue;
   background-size:100% 800px;
   position: relative;
 }

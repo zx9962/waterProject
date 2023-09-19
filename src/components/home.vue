@@ -1,4 +1,4 @@
-<style lang="less">
+<style lang="less" scoped>
 #home {
   .home{
     width: 349px;
@@ -6,6 +6,7 @@
     background: #fff;
     font-size: 15px;
     border-radius: 10px;
+    margin-top: 120px;
     /* box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     .user{
@@ -67,7 +68,6 @@
       font-size: 12px;
     }
   }
-
   .yzm-box{
     display: flex;
     justify-content: space-between;

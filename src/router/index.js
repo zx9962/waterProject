@@ -22,6 +22,10 @@ import data from '@/views/agent/children/data'
 import password from '@/views/agent/children/password'
 import faultPage from '@/views/equipment/children/fault'
 import filterPage from '@/views/equipment/children/filter'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3af95e00b9bcf3299bdf951488a11e6010d33f00
 Vue.use(Router)
 
 export default new Router({
@@ -120,16 +124,15 @@ export default new Router({
           path: '/agent',
           name: 'agent',
           component: agent,
-          redirect: '/password',
+          redirect: '/agent/password',
           children: [
             {
-              path: '/password',
+              path: 'password',
               name: 'password',
               component: password
-              // children: [] // 三级路由
             },
             {
-              path: '/data',
+              path: 'data',
               name: 'dataA',
               component: data
             }
@@ -185,7 +188,10 @@ export default new Router({
         }
       ]
     }
-  ],
-  linkActiveClass: 'router-active',
-  linkExactActiveClass: 'router-linkactive'
+  ]
+<<<<<<< HEAD
+=======
+  // linkActiveClass: 'router-active',
+  // linkExactActiveClass: 'router-linkactive'
+>>>>>>> 57910275b92bdc25fc6b0d6cb3d456041b48604b
 })
