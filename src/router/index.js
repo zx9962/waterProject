@@ -10,6 +10,11 @@ import week from '@/views/userFeedback/children/week'
 import year from '@/views/userFeedback/children/year'
 import threeMonth from '@/views/userFeedback/children/threeMonth'
 import oneMonth from '@/views/userFeedback/children/oneMonth'
+import dataAnalysis from '@/views/dataAnalysis/dataAnalysis'
+import d1 from '@/views/dataAnalysis/children/d1'
+import d2 from '@/views/dataAnalysis/children/d2'
+import d3 from '@/views/dataAnalysis/children/d3'
+import d4 from '@/views/dataAnalysis/children/d4'
 
 Vue.use(Router)
 
@@ -64,6 +69,30 @@ export default new Router({
             {
               path: 'oneMonth',
               component: oneMonth
+            }
+          ]
+        },
+        {
+          path: '/dataAnalysis',
+          name: 'dataAnalysis',
+          component: dataAnalysis,
+          redirect: '/dataAnalysis/d1',
+          children: [
+            {
+              path: 'd1',
+              component: d1
+            },
+            {
+              path: 'd2',
+              component: d2
+            },
+            {
+              path: 'd3',
+              component: d3
+            },
+            {
+              path: 'd4',
+              component: d4
             }
           ]
         }
