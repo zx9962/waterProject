@@ -15,6 +15,8 @@ import file from '@/views/file/file'
 import agent from '@/views/agent/agent'
 import data from '@/views/agent/children/data'
 import password from '@/views/agent/children/password'
+import faultPage from '@/views/equipment/children/fault'
+import filterPage from '@/views/equipment/children/filter'
 
 Vue.use(Router)
 
@@ -37,7 +39,25 @@ export default new Router({
         {
           path: '/equip',
           name: 'equipment',
-          component: equipment
+          component: equipment,
+          redirect: '/equip/oneP',
+          children: [
+            {
+              path: 'oneP',
+              name: 'onePage',
+              component: () => import('@/views/equipment/children/onePage')
+            },
+            {
+              path: 'fault',
+              name: 'faultPage',
+              component: faultPage
+            },
+            {
+              path: 'filter',
+              name: 'filterPage',
+              component: filterPage
+            }
+          ]
         },
         {
           path: '/portrayal',
@@ -137,5 +157,7 @@ export default new Router({
         }
       ]
     }
-  ]
+  ],
+  linkActiveClass: 'router-active',
+  linkExactActiveClass: 'router-linkactive'
 })
