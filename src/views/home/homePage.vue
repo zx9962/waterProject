@@ -50,7 +50,7 @@
             <i class="el-icon-location"></i>
             <span>账号管理</span>
           </template>
-          <el-menu-item index="5-1">代理商管理</el-menu-item>
+          <el-menu-item index="/agent">代理商管理</el-menu-item>
           <el-menu-item index="/ledGer">后台账号管理</el-menu-item>
         </el-submenu>
       </el-menu>

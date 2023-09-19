@@ -25,7 +25,7 @@
         margin-right: 18px;
       }
     }
-    .list.router-link-active{
+    .list.router-linkactive{
       border-bottom: 3px solid #225ff8;
     }
     #password,#data{
