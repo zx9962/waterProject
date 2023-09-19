@@ -55,30 +55,26 @@ export default {
   methods: {
     // 向图标插入值
     async getdate () {
-      var res = await this.$axios.get('https://www.fastmock.site/mock/a1aadac316486d9974fb0ce587f48347/demo/generalize')
-      console.log(res)
+      // var res = await this.$axios.get('https://www.fastmock.site/mock/a1aadac316486d9974fb0ce587f48347/demo/generalize')
       // if (res.data.code === 200) {
       //   this.time1 = res.data.list1.time1
       //   this.num1 = res.data.list1.num1
       // }
-      console.log(this.option)
-      console.log(this.time1, this.num1)
-      this.option = {
-        xAxis: {
-          type: 'category',
-          data: res.data.list1.time1
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [
-          {
-            data: res.data.list1.num1,
-            type: 'line'
-          }
-        ]
-      }
-      console.log(this.option)
+      // this.option = {
+      //   xAxis: {
+      //     type: 'category',
+      //     data: res.data.list1.time1
+      //   },
+      //   yAxis: {
+      //     type: 'value'
+      //   },
+      //   series: [
+      //     {
+      //       data: res.data.list1.num1,
+      //       type: 'line'
+      //     }
+      //   ]
+      // }
     },
     // 渲染图表
     setTable () {
