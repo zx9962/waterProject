@@ -32,12 +32,9 @@
             <i class="iconfont icon-shujuzhongxin"></i>
             <span>数据中心</span>
           </template>
-<<<<<<< HEAD
           <el-menu-item index="/dataAnalysis">数据分析</el-menu-item>
           <el-menu-item index="3-2">水质分布</el-menu-item>
-=======
           <el-menu-item index="3-1">数据分析</el-menu-item>
->>>>>>> b16eb3bf6a369bdbeef3eb7ec30c157ee64ffc3d
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">

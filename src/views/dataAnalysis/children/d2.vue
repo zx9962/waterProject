@@ -28,7 +28,7 @@ export default {
       option = {
         xAxis: {
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', '上周', '本周']
+          data: ['11/5-11/13', '11/5-11/13', '11/14-11/20', '11/21-12/4', '12/5-12/11', '上周', '本周']
         },
         yAxis: {
           type: 'value'
@@ -50,7 +50,7 @@ export default {
 </script>
 <style scoped>
   #main{
-  width: 900px;
+  width: 1223px;
   height: 484px;
  }
 </style>

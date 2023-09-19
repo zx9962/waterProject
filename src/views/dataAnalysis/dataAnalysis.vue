@@ -1,6 +1,10 @@
 <template>
   <div id='dataAnalysis'>
     <advert></advert>
+    <div class="unit">
+      <p>增长数</p>
+      <span>台</span>
+    </div>
     <div class="d-flex jump">
       <router-link to="/dataAnalysis/d1" class="pic">用户日活跃度</router-link>
       <router-link to="/dataAnalysis/d2" class="pic">设备日净水量</router-link>
@@ -8,7 +12,7 @@
       <router-link to="/dataAnalysis/d4" class="pic">设备周增长</router-link>
     </div>
     <router-view class="show"/>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -38,10 +42,13 @@ export default {
     position: relative;
   }
   .show{
-    width: 1323px;
+    width: 1223px;
     height: 484px;
     position: absolute;
+    top: 150px;
+    left:28px;
     background: #fff;
+    border-radius: 10px;
   }
   .pic{
     display: block;
@@ -52,15 +59,37 @@ export default {
     line-height: 30px;
     margin-left: 30px;
   }
-  a.router-link-active{
+  a.router-linkactive{
     color: #fff;
     background: #3f74f9;
     border-radius: 15px;
   }
   .jump{
-    width: 100%;
+    width: 1223px;
     height: 56px;
-    background: #f5f6fc;
+    position: absolute;
+    top:50px;
+    left:28px;
+    background: #e6f0ff;
     margin-top: 15px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .unit{
+    width: 97px;
+    height: 30px;
+    border-radius:15px;
+    background: #e6f0ff;
+    font-size: 10px;
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .unit span{
+    color: #3f74f9;
   }
 </style>
