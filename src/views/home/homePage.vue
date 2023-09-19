@@ -1,7 +1,7 @@
 <template>
   <div id="homePage">
     <div class="h-left">
-      <div class="l-title">saas</div>
+      <div class="l-title" @click="skip()">saas</div>
       <el-menu
         default-active="2"
         class="el-menu-vertical-demo"
@@ -110,6 +110,9 @@ export default {
     },
     backChange () {
       this.$router.push('/login')
+    },
+    skip () {
+      this.$router.push('/generalize')
     }
   }
 }

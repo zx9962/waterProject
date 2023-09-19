@@ -116,16 +116,15 @@ export default new Router({
           path: '/agent',
           name: 'agent',
           component: agent,
-          redirect: '/password',
+          redirect: '/agent/password',
           children: [
             {
-              path: '/password',
+              path: 'password',
               name: 'password',
               component: password
-              // children: [] // 三级路由
             },
             {
-              path: '/data',
+              path: 'data',
               name: 'dataA',
               component: data
             }
@@ -157,7 +156,7 @@ export default new Router({
         }
       ]
     }
-  ],
-  linkActiveClass: 'router-active',
-  linkExactActiveClass: 'router-linkactive'
+  ]
+  // linkActiveClass: 'router-active',
+  // linkExactActiveClass: 'router-linkactive'
 })

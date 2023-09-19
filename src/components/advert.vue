@@ -1,7 +1,6 @@
 <template>
   <div id="advert">
     <div class="advert_box" @click="jump">
-      <!-- <i class="el-icon-eleme"></i> -->
       <img src="../img/ic_horn.png" alt="">
       <span>【公告】热烈祝贺公司接入深智云净水平台</span>
     </div>
