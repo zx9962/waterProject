@@ -46,18 +46,19 @@
       </div>
     </div>
     <div class="l-group">
-      <p class="l-tname">推送对象</p>
+      <p class="l-tname">标题</p>
       <el-input v-model="ruleForm.user" placeholder="不填则默认应用名称" class="l-inp-name"></el-input>
     </div>
     <div class="l-group">
       <p class="l-tname">内容</p>
       <el-input type="textarea" v-model="ruleForm.desc" placeholder="通知正文" class="l-inp-name"></el-input>
     </div>
-    <el-button type="primary" class="l-btn">立即发送</el-button>
+    <el-button type="primary" class="l-btn" @click="addData()">立即发送</el-button>
   </div>
 </template>
 
 <script>
+import bus from '@/utils/eventBus'
 export default {
   name: 'leftFrom1',
   props: {},
@@ -69,13 +70,26 @@ export default {
         year: '',
         balance: '',
         user: '',
-        desc: ''
+        desc: '',
+        time: new Date()
       }
     }
   },
   methods: {
-    add () {
-      console.log('111')
+    async addData () {
+      const res = await this.$axios.get('http://127.0.0.1:2112/pushPort', {
+        params: this.ruleForm
+      })
+      bus.$emit('sendMessage', true)
+      this.ruleForm = {
+        platform: [],
+        people: [],
+        year: '',
+        balance: '',
+        user: '',
+        desc: ''
+      }
+      console.log(res)
     }
   }
 }

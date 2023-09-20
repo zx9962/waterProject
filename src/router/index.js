@@ -186,9 +186,4 @@ export default new Router({
       ]
     }
   ]
-<<<<<<< HEAD
-=======
-  // linkActiveClass: 'router-active',
-  // linkExactActiveClass: 'router-linkactive'
->>>>>>> 57910275b92bdc25fc6b0d6cb3d456041b48604b
 })

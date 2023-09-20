@@ -14,6 +14,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "echarts": "^5.4.3",
     "element-ui": "^2.15.14",
     "less-loader": "^4.1.0",

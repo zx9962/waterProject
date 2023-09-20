@@ -76,6 +76,9 @@
 <template>
     <div id='filter'>
       <div class="wrap d-flex">
+        <!-- <div id="bigLeft">
+          <mapCom></mapCom>
+        </div> -->
         <div id="bigLeft"><h1>我是地图</h1></div>
         <div class="minRight">
           <div class="minTop">
@@ -105,8 +108,9 @@
 <script>
 // import * as echarts from 'echarts'
 import 'echarts/extension/bmap/bmap'
+// import mapCom from '@/components/MapContainer/MapContainer'
 export default {
-  name: 'filter',
+  name: 'filterPage',
   // import引入组件才能使用
   components: {},
   props: {},
