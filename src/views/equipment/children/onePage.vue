@@ -6,7 +6,7 @@
       background-color: white;
       margin: 17px 17px 0 40px;
       .block{
-        margin-top: 30px;
+        margin-top: 25px;
       }
       .has-gutter tr th,.el-table__body-wrapper tbody tr td {
         text-align: center;
@@ -90,12 +90,12 @@
             <el-table-column
               prop="date"
               label="设备mac"
-              width="180">
+              width="200">
             </el-table-column>
             <el-table-column
               prop="name"
               label="设备状态"
-              width="130">
+              width="142">
             </el-table-column>
             <el-table-column
               prop="address"
@@ -105,7 +105,7 @@
             <el-table-column
               prop="site"
               label="用户地址"
-              width="200">
+              width="220">
             </el-table-column>
           </el-table>
         </template>
