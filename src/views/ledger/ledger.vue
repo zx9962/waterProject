@@ -18,7 +18,7 @@
         }
       }
       .rost{
-        padding: 20px 0 0px 35px;
+        padding: 15px 0 0px 35px;
         h5{
           font-size:13px ;
           color:#3c4571 ;

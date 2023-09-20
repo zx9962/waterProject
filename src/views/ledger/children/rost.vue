@@ -2,12 +2,12 @@
   #rost{
     .botBox{
       width:1226px ;
-      height:425px ;
+      height:405px ;
       margin: 6px 0 0 28px;
       background-color: #fff;
       .leftBox{
         width:447px ;
-        height: 425px;
+        height: 415px;
         // background-color: pink;
         box-sizing: border-box;
         padding: 0 0 0 77px;
@@ -27,7 +27,7 @@
       }
       .rightBox{
         width: 574px;
-        height: 425px;
+        height: 415px;
         // background-color: aqua;
         .assign{
           width: 100%;
@@ -91,19 +91,19 @@
               <el-input v-model="backstage.formLabelAlign.region" show-password placeholder="请填写密码"></el-input>
             </el-form-item>
             <el-form-item label="联系人">
-              <el-input v-model="backstage.formLabelAlign.type"></el-input>
+              <el-input v-model="backstage.formLabelAlign.type" placeholder="请填写联系人"></el-input>
             </el-form-item>
             <el-form-item label="联系电话">
-              <el-input v-model="backstage.formLabelAlign.phone"></el-input>
+              <el-input v-model="backstage.formLabelAlign.phone" placeholder="请填写联系电话"></el-input>
             </el-form-item>
             <el-form-item label="邮箱">
-              <el-input v-model="backstage.formLabelAlign.mailbox"></el-input>
+              <el-input v-model="backstage.formLabelAlign.mailbox" placeholder="请填写邮箱"></el-input>
             </el-form-item>
             <el-form-item label="公司职务">
               <el-input v-model="backstage.formLabelAlign.duty" placeholder="此处填写公司职务"></el-input>
             </el-form-item>
             <el-form-item label="联系地址">
-              <el-input v-model="backstage.formLabelAlign.site"></el-input>
+              <el-input v-model="backstage.formLabelAlign.site" placeholder="请填写联系地址"></el-input>
             </el-form-item>
             <el-form-item label="角色类型">
               <el-select v-model="backstage.value" placeholder="请选择">
