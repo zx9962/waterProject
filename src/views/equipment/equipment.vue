@@ -1,13 +1,13 @@
 <style lang="less">
   #equipment{
-    width: 1226px;
+    width: 1321px;
     .wrap{
-        width: 1226px;
+        width: 1321px;
         height: 37px;
         background-color: #edf4fc;
         margin: 7px auto;
         box-sizing: border-box;
-        padding: 0 20px;
+        padding: 0 60px;
         .inp{
           width: 306px;
           height: 24px;
@@ -40,8 +40,9 @@
     }
   }
   .classify{
-      width: 100%;
+      width: 1229px;
       height: 55px;
+      margin: 0 auto;
       background-color: white;
       border-bottom: 1px solid #eaebf7;
       box-sizing: border-box;

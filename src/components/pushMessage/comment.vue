@@ -1,7 +1,7 @@
 <template>
   <div class="comment">
     <div class="c-name d-flex justify-content-between align-items-center">
-      <p class="fw"><slot name="name"></slot></p>
+      <p class="fw name"><slot name="name"></slot></p>
       <p class="time"><slot name="time"></slot></p>
     </div>
     <div class="d-flex label align-items-center">
@@ -35,11 +35,15 @@ export default {
 <style scoped lang="less">
 .comment{
   padding: 10px 32px;
-  height: 135px;
+  // height: 135px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   border-top: 1px solid #d3d3d3;
   .c-name{
     font-size: 17px;
+    .name{
+      color: #5b6388;
+    }
     .time{
       color: #989fbd;
       font-size: 10px;
@@ -59,8 +63,9 @@ export default {
     }
   }
   .c-text{
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 5px;
+    text-align: justify;
   }
 }
 </style>

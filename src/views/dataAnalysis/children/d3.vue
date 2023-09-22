@@ -51,8 +51,8 @@ export default {
 }
 </script>
 <style scoped>
-  #main{
-  width: 900px;
+ #main{
+  width: 1223px;
   height: 484px;
  }
 </style>

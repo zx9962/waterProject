@@ -33,6 +33,12 @@
             <span>数据中心</span>
           </template>
           <el-menu-item index="/dataAnalysis">数据分析</el-menu-item>
+<<<<<<< HEAD
+=======
+          <el-menu-item index="3-2">水质分布</el-menu-item>
+          <!-- <el-menu-item index="3-2">水质分布</el-menu-item>
+          <el-menu-item index="3-1">数据分析</el-menu-item> -->
+>>>>>>> f0f05c7a0e64ab5c3b167d7abdc2988736addc47
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
