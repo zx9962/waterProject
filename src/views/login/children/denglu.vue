@@ -25,8 +25,8 @@ export default {
   name: 'denglu',
   data () {
     return {
-      mobile: '岳山',
-      pwd: '123456',
+      mobile: '',
+      pwd: '',
       aaa: 1,
       checked: false
     }

@@ -45,35 +45,34 @@ export default {
     width: 1223px;
     height: 484px;
     position: absolute;
-    top: 150px;
+    top: 120px;
     left:28px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
   }
   .pic{
     display: block;
     width: 120px;
-    height: 30px;
+    height: 24px;
     font-size: 10px;
     text-align: center;
-    line-height: 30px;
+    line-height: 24px;
     margin-left: 30px;
   }
-  a.router-linkactive{
+  a.router-link-active{
     color: #fff;
     background: #3f74f9;
     border-radius: 15px;
   }
   .jump{
     width: 1223px;
-    height: 56px;
+    height: 40px;
     position: absolute;
     top:50px;
     left:28px;
-    background: #e6f0ff;
+    background: #f5faff;
     margin-top: 15px;
     align-items: center;
-    border-radius: 10px;
   }
   .unit{
     width: 97px;
@@ -82,8 +81,8 @@ export default {
     background: #e6f0ff;
     font-size: 10px;
     position: absolute;
-    top: 160px;
-    left: 80px;
+    top: 130px;
+    left: 120px;
     z-index: 2;
     display: flex;
     justify-content: space-around;
