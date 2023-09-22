@@ -1,13 +1,13 @@
 <style lang="less">
   #ledger{
-    width: 1321px;
+    width: 100%;
     height: 640px;
     .parcel{
-      width: 1321px;
+      width: 100%;
       height: 640px;
       box-sizing: border-box;
       .title{
-        width: 1321px;
+        width: 100%;
         height: 38px;
         line-height: 38px;
         box-sizing: border-box;

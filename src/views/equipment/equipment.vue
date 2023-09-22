@@ -1,13 +1,13 @@
 <style lang="less">
   #equipment{
-    width: 1321px;
+    width: 100%;
     .wrap{
-        width: 1321px;
+        width: 1229px;
         height: 37px;
         background-color: #edf4fc;
-        margin: 7px auto;
+        margin: 10px auto 0;
         box-sizing: border-box;
-        padding: 0 60px;
+        padding: 0 20px;
         .inp{
           width: 306px;
           height: 24px;
@@ -47,6 +47,7 @@
       border-bottom: 1px solid #eaebf7;
       box-sizing: border-box;
       padding: 0 20px;
+      border-radius: 0 0 10px 10px;
     p{
       width:73px ;
       height: 24px;
@@ -69,14 +70,14 @@
       font-size: 13px;
     }
   }
-  .wr{
-    .wrLeft{
-      width: 800px;
-      height: 445px;
-      background-color: white;
-      margin: 17px 17px 0 40px;
-    }
-  }
+  // .wr{
+  //   .wrLeft{
+  //     width: 800px;
+  //     height: 445px;
+  //     background-color: white;
+  //     margin: 17px 17px 0 40px;
+  //   }
+  // }
 }
 </style>
 <template>
@@ -96,7 +97,10 @@
           @click="activeTab = index"
           :class="{active: activeTab === index}">{{ item.title }}</p>
       </div>
-      <span id="map">地图</span>
+      <span id="map">
+        <i class="el-icon-location-information"></i>
+        地图
+      </span>
     </div>
     <div class="wr">
       <router-view></router-view>

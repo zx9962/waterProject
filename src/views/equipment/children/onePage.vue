@@ -1,10 +1,10 @@
 <style lang="less">
   #onePage{
     .wrLeft{
-      width: 800px;
+      width: 594px;
       height: 445px;
       background-color: white;
-      margin: 17px 17px 0 40px;
+      margin: 17px 17px 0 45px;
       .block{
         margin-top: 25px;
       }
@@ -14,9 +14,12 @@
       .has-gutter tr th{
         background-color: #f4f8ff;
       }
+      .el-table__cell{
+        color: #49527a;
+      }
     }
     .wrRight{
-      width:660px;
+      width:624px;
       height:445px;
       margin-top: 17px;
       background-color: white;
@@ -27,6 +30,8 @@
         }
         .el-tabs__item{
           height: 50px;
+          font-weight:bold ;
+          color: #49527a;
         }
         .tab-paneX{
           box-sizing: border-box;
@@ -80,7 +85,7 @@
   }
 </style>
 <template>
-    <div id='onePage' class="d-flex justify-content-between">
+    <div id='onePage' class="d-flex">
       <div class="wrLeft">
         <template>
           <el-table
@@ -90,7 +95,7 @@
             <el-table-column
               prop="date"
               label="设备mac"
-              width="200">
+              width="170">
             </el-table-column>
             <el-table-column
               prop="name"
@@ -105,16 +110,13 @@
             <el-table-column
               prop="site"
               label="用户地址"
-              width="220">
+              width="150">
             </el-table-column>
           </el-table>
         </template>
         <div class="block d-flex justify-content-around">
           <!-- <span class="demonstration">完整功能</span> -->
           <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page="currentPage4"
             :page-sizes="[100, 200, 300, 400]"
             :page-size="100"
             layout="total, sizes, prev, pager, next, jumper"

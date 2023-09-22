@@ -10,7 +10,7 @@
         height: 415px;
         // background-color: pink;
         box-sizing: border-box;
-        padding: 0 0 0 77px;
+        padding: 8px 0 0 77px;
         .el-input--suffix .el-input__inner{padding-right: 0;}
         .el-select{
           .el-input--suffix{
@@ -27,8 +27,9 @@
       }
       .rightBox{
         width: 574px;
-        height: 415px;
+        height: 407px;
         // background-color: aqua;
+        padding-top:8px ;
         .assign{
           width: 100%;
           height: 50px;

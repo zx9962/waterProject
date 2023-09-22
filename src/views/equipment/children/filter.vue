@@ -79,7 +79,7 @@
 </style>
 <template>
     <div id='filter'>
-      <div class="wrap d-flex">
+      <div class="wrapA d-flex">
         <!-- <div id="bigLeft">
           <mapCom></mapCom>
         </div> -->
