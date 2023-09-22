@@ -34,7 +34,20 @@ export default new Router({
     {
       path: '/login',
       name: 'login',
-      component: login
+      component: login,
+      redirect: '/login/denglu',
+      children: [
+        {
+          path: 'denglu',
+          name: 'denglu',
+          component: () => import('@/views/login/children/denglu')
+        },
+        {
+          path: 'zhuce',
+          name: 'zhuce',
+          component: () => import('@/views/login/children/zhuce')
+        }
+      ]
     },
     {
       path: '/home',
@@ -186,9 +199,4 @@ export default new Router({
       ]
     }
   ]
-<<<<<<< HEAD
-=======
-  // linkActiveClass: 'router-active',
-  // linkExactActiveClass: 'router-linkactive'
->>>>>>> 57910275b92bdc25fc6b0d6cb3d456041b48604b
 })

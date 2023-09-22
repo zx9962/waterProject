@@ -24,12 +24,6 @@
           <el-menu-item index="/userManage">用户管理</el-menu-item>
           <el-menu-item index="/equip">设备管理</el-menu-item>
           <el-menu-item index="/file">滤芯寿命管理</el-menu-item>
-<<<<<<< HEAD
-          <el-menu-item index="2-4">故障监控</el-menu-item>
-          <el-menu-item index="2-5">消息推送</el-menu-item>
-          <el-menu-item index="2-3">滤芯寿命管理</el-menu-item>
-=======
->>>>>>> 3af95e00b9bcf3299bdf951488a11e6010d33f00
           <el-menu-item index="/push">消息推送</el-menu-item>
           <el-menu-item index="/userFeedback">用户反馈</el-menu-item>
         </el-submenu>
@@ -39,8 +33,6 @@
             <span>数据中心</span>
           </template>
           <el-menu-item index="/dataAnalysis">数据分析</el-menu-item>
-          <!-- <el-menu-item index="3-2">水质分布</el-menu-item>
-          <el-menu-item index="3-1">数据分析</el-menu-item> -->
           <el-menu-item index="/portrayal">人群画像</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
@@ -68,8 +60,8 @@
           <el-dropdown :hide-on-click="false">
             <span class="el-dropdown-link">
               <div class="user-head d-flex align-items-center justify-content-between">
-                <i class="iconfont icon-zhanghaoguanli"></i>
-                <p>遥遥领先</p>
+                <img :src="require('@/img/'+user.img)" alt="" class="img-head">
+                <p>{{user.username}}</p>
                 <i class="el-icon-caret-bottom fw"></i>
               </div>
             </span>
@@ -89,17 +81,18 @@
 </template>
 
 <script>
-import home from '@/components/home'
 export default {
   name: 'homePage',
-  components: {home},
+  components: {},
   data () {
     return {
-      fold: true
+      fold: true,
+      user: this.$route.query
     }
   },
   // 生命周期,创建完成时(可以访问当前this实例)
-  created () {},
+  created () {
+  },
   // 生命周期:挂载完成时(可以访问DOM元素)
   mounted () {
     // this.add()
@@ -167,12 +160,18 @@ export default {
         color: #7994c2;
       }
       .t-right{
-        width: 100px;
+        // width: 100px;
         .user-head{
-          width: 90px;
+          // width: 90px;
+          .img-head{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+          }
           p{
            color: #545e75;
            font-size: 13px;
+           margin: 0 5px;
           }
           i{
             color: #3f74f9 !important;

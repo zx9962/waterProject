@@ -32,7 +32,6 @@ import c3 from '../../components/generalize/c3'
 import b1 from '../../components/generalize/b1'
 import b2 from '../../components/generalize/b2'
 import b3 from '../../components/generalize/b3'
-import advert from '../../components/advert'
 export default {
   name: 'generalize',
   // import引入组件才能使用
@@ -42,8 +41,7 @@ export default {
     c3,
     b1,
     b2,
-    b3,
-    advert
+    b3
   },
   data () {
     return {
@@ -58,7 +56,6 @@ export default {
   },
   // 生命周期,创建完成时(可以访问当前this实例)
   created () {
-
   },
   // 生命周期:挂载完成时(可以访问DOM元素)
   mounted () {
