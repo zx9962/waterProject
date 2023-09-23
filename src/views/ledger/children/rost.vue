@@ -84,7 +84,7 @@
       <div class="botBox d-flex justify-content-between">
           <div class="leftBox">
       <div style="margin: 0px;"></div>
-          <el-form :label-position="labelPosition" :rules="backstage.rules" label-width="80px" :model="formLabelAlign">
+          <el-form :label-position="labelPosition" :rules="backstage.rules" label-width="80px" :model="backstage.formLabelAlign">
             <el-form-item label="账号" prop="name">
               <el-input v-model="backstage.formLabelAlign.name" placeholder="请填写用户名"></el-input>
             </el-form-item>
@@ -205,6 +205,7 @@ export default {
   props: {},
   data () {
     return {
+      checked: true,
       labelPosition: 'right',
       backstage: {
         formLabelAlign: {
