@@ -1,8 +1,8 @@
 <style lang="less">
   #rost{
     .botBox{
-      width:1226px ;
-      height:405px ;
+      width:1226px;
+      height:430px;
       margin: 6px 0 0 28px;
       background-color: #fff;
       .leftBox{
@@ -10,7 +10,7 @@
         height: 415px;
         // background-color: pink;
         box-sizing: border-box;
-        padding: 8px 0 0 77px;
+        padding: 16px 0 0 77px;
         .el-input--suffix .el-input__inner{padding-right: 0;}
         .el-select{
           .el-input--suffix{
@@ -29,7 +29,7 @@
         width: 574px;
         height: 407px;
         // background-color: aqua;
-        padding-top:8px ;
+        padding-top:16px;
         .assign{
           width: 100%;
           height: 50px;

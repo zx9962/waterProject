@@ -11,12 +11,11 @@
         text-align: center;
         line-height: 445px;
         background-color: white;
-        margin: 17px 17px 0 0px;
+        margin: 0 17px 0 0px;
       }
       .minRight{
-        margin-top: 17px;
+        width: 410px;
         .minTop{
-          width: 389px;
           height: 229px;
           background-color: white;
           box-sizing: border-box;
@@ -38,7 +37,6 @@
           }
         }
         .minBottom{
-          width: 389px;
           height: 209px;
           margin-top: 10px;
           background-color: white;

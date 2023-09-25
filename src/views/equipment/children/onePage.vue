@@ -4,7 +4,7 @@
       width: 594px;
       height: 445px;
       background-color: white;
-      margin: 17px 17px 0 45px;
+      margin: 0 17px 0 0;
       .block{
         margin-top: 25px;
       }
@@ -21,7 +21,6 @@
     .wrRight{
       width:624px;
       height:445px;
-      margin-top: 17px;
       background-color: white;
       .wrRTop{
         .el-tabs__nav-scroll{
@@ -76,10 +75,10 @@
           }
         }
         .el-progress__text{
-            font-size: 16px !important;
-            color: #ff7606 !important;
-            font-weight: bold;
-          }
+          font-size: 16px !important;
+          color: #ff7606 !important;
+          font-weight: bold;
+        }
       }
     }
   }

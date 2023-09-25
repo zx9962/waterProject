@@ -1,11 +1,13 @@
 <style lang="less">
   #equipment{
     width: 100%;
+    .box-group{
+      width: 1229px;
+      margin: 10px auto 0;
+    }
     .wrap{
-        width: 1229px;
         height: 37px;
         background-color: #edf4fc;
-        margin: 10px auto 0;
         box-sizing: border-box;
         padding: 0 20px;
         .inp{
@@ -47,7 +49,7 @@
       border-bottom: 1px solid #eaebf7;
       box-sizing: border-box;
       padding: 0 20px;
-      border-radius: 0 0 10px 10px;
+      border-radius: 0 0 5px 5px;
     p{
       width:73px ;
       height: 24px;
@@ -70,40 +72,37 @@
       font-size: 13px;
     }
   }
-  // .wr{
-  //   .wrLeft{
-  //     width: 800px;
-  //     height: 445px;
-  //     background-color: white;
-  //     margin: 17px 17px 0 40px;
-  //   }
-  // }
+  .wr{
+    margin-top: 13px;
+  }
 }
 </style>
 <template>
   <div id="equipment">
     <advert></advert>
-    <div class="wrap d-flex justify-content-between align-items-center">
-      <div class="situation d-flex align-items-center">
-      <router-link to="/equip/oneP">在线情况</router-link>
-      <router-link to="/equip/fault">故障情况</router-link>
-      <router-link to="/equip/filter">滤芯情况</router-link>
-    </div>
-      <input class="inp" type="text" placeholder="在次输入净水器mac地址">
-    </div>
-    <div class="classify d-flex justify-content-between align-items-center">
-      <div class="ifyLeft d-flex justify-content-between align-items-center">
-        <p v-for="(item, index) in tabs" :key="index"
-          @click="activeTab = index"
-          :class="{active: activeTab === index}">{{ item.title }}</p>
+    <div class="box-group">
+      <div class="wrap d-flex justify-content-between align-items-center">
+        <div class="situation d-flex align-items-center">
+        <router-link to="/equip/oneP">在线情况</router-link>
+        <router-link to="/equip/fault">故障情况</router-link>
+        <router-link to="/equip/filter">滤芯情况</router-link>
       </div>
-      <span id="map">
-        <i class="el-icon-location-information"></i>
-        地图
-      </span>
-    </div>
-    <div class="wr">
-      <router-view></router-view>
+        <input class="inp" type="text" placeholder="在次输入净水器mac地址">
+      </div>
+      <div class="classify d-flex justify-content-between align-items-center">
+        <div class="ifyLeft d-flex justify-content-between align-items-center">
+          <p v-for="(item, index) in tabs" :key="index"
+            @click="activeTab = index"
+            :class="{active: activeTab === index}">{{ item.title }}</p>
+        </div>
+        <span id="map">
+          <i class="el-icon-location-information"></i>
+          地图
+        </span>
+      </div>
+      <div class="wr">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
